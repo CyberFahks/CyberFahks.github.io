@@ -242,11 +242,26 @@ body {
   }
 
   .divider {
-	width: 400px;
-	height: auto;
-	margin-top: 100px;
-	margin-bottom: 50px;
-  }
+    max-width: 100%; /* Ensure the divider doesn't exceed the width of its container */
+    width: 80%; /* Set the initial width to 80% of its container */
+    height: auto; /* Allow the height to adjust proportionally */
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+/* Adjust the divider size for smaller screens */
+@media screen and (max-width: 768px) {
+    .divider {
+        width: 90%; /* Reduce the width for screens up to 768px wide */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .divider {
+        width: 95%; /* Further reduce the width for screens up to 480px wide */
+    }
+}
+
 
   .dividerhead {
 	align-content: center;
