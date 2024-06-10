@@ -3,13 +3,24 @@
 	  width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
 	}
   }
-  @media (min-width: 480px) {
-	.navbar-nav {
-		margin-left: auto;
+
+  @media screen and (max-width: 600px) {
+	/* Adjust the styling for polaroid elements for screens with a maximum width of 600px */
+	.polaroid {
+	  display: block; /* Change the display property to "block" to make them stack */
+	  width: 100%; /* Make polaroid elements take up the full width */
+	  margin-bottom: 20px; /* Add some bottom margin for spacing */
 	}
-}
+  }
 
 @media screen and (max-width: 768px) {
+  }
+
+  @media (min-width: 600px) {
+	.navbar-nav {
+	  margin-left: auto;
+	  border: 3px solid #e3ed80;
+	}
   }
 
 body {
@@ -63,12 +74,7 @@ body {
 	margin: 0 0 0 200;
   }
   
-  @media (min-width: 600px) {
-	.navbar-nav {
-	  margin-left: auto;
-	  border: 3px solid #e3ed80;
-	}
-  }
+  
   
   .nav-link:link {
 	font-family: "Josefin Sans";
