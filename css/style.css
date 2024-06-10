@@ -9,6 +9,9 @@
 	}
 }
 
+@media screen and (max-width: 768px) {
+  }
+  
 body {
 	background-color: #fffcee;
 	font-family: "RajdHami", sans-serif;
