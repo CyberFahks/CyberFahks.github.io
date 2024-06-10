@@ -128,15 +128,18 @@
       color: #7db3a5;
 }
 .slider__caption {
+  font-family: "Urbanist";
   font-weight: 500;
   margin: 2rem 0 1rem;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
 }
 .slider__txt {
-  color: #e09186;
-  margin-bottom: 3rem;
-  max-width: 300px;
+	font-family: "Urbanist";
+	font-size: 20px;
+    color: #e09186;
+    margin-bottom: 3rem;
+    max-width: 300px;
 }
 
 @-webkit-keyframes check {
@@ -169,7 +172,6 @@ body {
 	margin-left: 1in;
 	margin-right: 1in;
 	background: #fffcee;
-	color: darkslategray;
 	line-height: 16px;
 	padding: 1em;
   }
