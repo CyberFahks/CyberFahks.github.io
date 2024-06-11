@@ -327,6 +327,26 @@ body {
 	font-family: Lilita One;
 	text-align: center;
   }
+
+  .paragraphs2 {
+	text-align: center;
+	font-family: 'Urbanist';
+	font-size: 14px;
+	color: #7db3a5;
+  }
+  
+  .ulcenter {
+	text-align: center;
+	font-family: "Urbanist";
+	font-size: 16px;
+	color: #7db3a5;
+  }
+  .licenter {
+	text-align: center;
+	font-family: "Urbanist";
+	font-size: 14px;
+	color: #7db3a5;
+  }
   
   .h4 {
 	text-align: left;
@@ -337,6 +357,7 @@ body {
 	color: #e09186;
 	font-size: 300;
 	font-family: "Lilita One";
+	text-align: center;
   }
   
   .h5style {
