@@ -7,9 +7,9 @@
   @media screen and (max-width: 600px) {
 	/* Adjust the styling for polaroid elements for screens with a maximum width of 600px */
 	.polaroid {
-	  display: block; /* Change the display property to "block" to make them stack */
-	  width: 100%; /* Make polaroid elements take up the full width */
-	  margin-bottom: 20px; /* Add some bottom margin for spacing */
+	display: block; /* Change the display property to "block" to make them stack */
+	width: 100%; /* Make polaroid elements take up the full width */
+	margin-bottom: 20px; /* Add some bottom margin for spacing */
 	}
   }
 
@@ -18,8 +18,8 @@
 
   @media (min-width: 600px) {
 	.navbar-nav {
-	  margin-left: auto;
-	  border: 3px solid #e3ed80;
+	margin-left: auto;
+	border: 3px solid #e3ed80;
 	}
   }
 
