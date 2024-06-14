@@ -270,6 +270,17 @@ header .container > * + * {
       border-left: 4px solid;
    }
 }
+
+.works {
+   width: 400px;
+   border: 2px solid #390e73;
+   justify-content: center;  /* Centers the image horizontally */
+   align-items: center;  /* Adds a solid border */
+}
+   height: auto;
+   margin: 100%;
+
+}
 header .link-github {
    display: -webkit-inline-box;
    display: -ms-inline-flexbox;
@@ -629,6 +640,80 @@ article {
       height: auto;
     }
 
+    /*polaroid start*/
+    blockquote {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5vw;
+	min-height: 300vh;
+	padding-top: 10vw;
+	padding-bottom: 10vw;
+}
+
+cite {
+	margin-top: auto;
+	font-size: clamp(1rem, 4vw, 1.25rem);
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.polaroid {
+	width: 75%;
+	max-width: 400px;
+	position: sticky;
+	top: 10vw;
+	box-shadow: 0 0.5vw 1vw 0 rgba(#000, 0.1);
+	&:nth-child(1) {
+		transform: rotate(4deg) translatex(2vw);
+	}
+
+	&:nth-child(2) {
+		transform: rotate(-6deg) translatex(-2vw);
+	}
+
+	&:nth-child(3) {
+		transform: rotate(8deg) translatex(4vw);
+	}
+}
+
+.card {
+	aspect-ratio: 3 / 2;
+	border: 2px solid #390e73;
+	background-color: #fffceefffceef;
+	position: relative;
+	transition: 0.15s ease;
+	padding: 5% 5% 5% 5%;
+	font-size: clamp(1.25rem, 4vw, 1.5rem);
+	p {
+		margin-top: 5%;
+		text-align: center;
+	}
+}
+
+.pencil {
+   justify-content: center;
+   align-items: center;      /* Centers the image vertically */
+   width: 300px;             /* Fixed width for the Polaroid frame */
+   height: auto;            /* Fixed height for the Polaroid frame */
+   padding: 30px;           
+}
+
+.image {
+	width: 100%;
+	border: 2px solid #390e73;
+	background-color: #fffcee;
+	position: relative;
+	img {
+		aspect-ratio: 1 / 1;
+		object-fit: cover;
+	}
+}
+
+
 /* Contact form section */
 * {
 	box-sizing: border-box;
@@ -654,7 +739,7 @@ article {
   }
 
 .brand span {
-	color: #731c12;
+	color: #390e73;
 }
 
 .wrapper {
