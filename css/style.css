@@ -697,7 +697,7 @@ img {
 .pencil {
    justify-content: center;
    align-items: center;      /* Centers the image vertically */
-   width: 300px;             /* Fixed width for the Polaroid frame */
+   width: 200px;             /* Fixed width for the Polaroid frame */
    height: auto;            /* Fixed height for the Polaroid frame */
    padding: 30px;           
 }
