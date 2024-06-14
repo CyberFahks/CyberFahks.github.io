@@ -24,7 +24,7 @@
 }
 :focus {
    outline-offset: 0.25rem;
-   outline: 0.25rem dashed var(#390e73--color-primary);
+   outline: 0.25rem dashed var( --color-primary);
 }
 *,
 *:before,
@@ -277,10 +277,7 @@ header .container > * + * {
    justify-content: center;  /* Centers the image horizontally */
    align-items: center;  /* Adds a solid border */
 }
-   height: auto;
-   margin: 100%;
 
-}
 header .link-github {
    display: -webkit-inline-box;
    display: -ms-inline-flexbox;
@@ -683,7 +680,7 @@ img {
 .card {
 	aspect-ratio: 3 / 2;
 	border: 2px solid #390e73;
-	background-color: #fffceefffceef;
+	background-color: #fffcee;
 	position: relative;
 	transition: 0.15s ease;
 	padding: 5% 5% 5% 5%;
