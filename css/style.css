@@ -2,13 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400&family=Shadows+Into+Light&display=swap");
 
 :root {
-   --color-primary: #390e73;
-   --color-primary-alt: #fffcee;
-   --color-secondary: #fffcee;
-   --font-family-primary: "Fahkwang", sans-serif;
-   --font-family-secondary: "Inter", "Sora", sans-serif;
-   --font-size-h1: 2.5rem;
-   --font-size-h2: 1.5rem;
+   --color-primary: #485459;
+   --color-primary-alt: #fffe5f;
+   --color-secondary: #fffef5;
+   --font-family-primary: "Raleway", sans serif;
+   --font-optical-sizing: auto;
+   --font-family-secondary: "Lobster", serif;
+   --font-size-h1: 3.5rem;
+   --font-size-h2: 1.75rem;
    --font-size-h3: 1.25rem;
    --font-size-h4: 1.125rem;
    --font-size-text: 1rem;
@@ -18,7 +19,7 @@
       --font-size-h1: 3.5rem;
       --font-size-h2: 2.5rem;
       --font-size-h3: 1.5rem;
-      --font-size-h4: 1.25rem;
+      --font-size-h4: 1.125rem;
       --font-size-text: 1.125rem;
    }
 }
@@ -56,6 +57,7 @@ body {
    text-rendering: optimizeSpeed;
    overflow-x: hidden;
    font-family: var(--font-family-primary);
+   font-optical-sizing: auto;
    font-size: var(--font-size-text);
    color: var(--color-primary);
    background-image: -webkit-repeating-radial-gradient(
@@ -84,7 +86,7 @@ body {
 }
 @media all and (min-width: 1300px) {
    body {
-      padding-top: 8rem;
+      padding-top: 3rem;
    }
 }
 img {
@@ -145,17 +147,28 @@ h1,
 h2,
 h3,
 h4 {
-   font-weight: 700;
+   color:#69492a;
 }
 h1 {
-   line-height: 1.125;
-   font-size: var(--font-size-h1);
-   font-size: clamp(2rem, 4vw, var(--font-size-h1));
+   line-height: 1.25;
+   font-family: "Lobster", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   color: #69492a;
+   font-size: var(--font-size-h2);
+   font-size: clamp(2rem, 4vw, var(--font-size-h2));
 }
 h2 {
    line-height: 1.25;
+   font-family: "Lobster", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   color: #c7cb54;
    font-size: var(--font-size-h2);
    font-size: clamp(2rem, 4vw, var(--font-size-h2));
+}
+h2 .brown {
+   color:#69492a;
 }
 .skip-link {
    position: absolute;
@@ -233,10 +246,10 @@ header .container {
    }
 }
 header .container h1 {
-   font-size: 1.5rem;
+   font-size: 2.25rem;
 }
 header .container h2 {
-   font-size: 1.25rem;
+   font-size: 2.25rem;
 }
 header .container p {
    font-size: 1rem;
@@ -255,7 +268,8 @@ header .container p {
 }
 header .container p a {
    text-decoration: none;
-   font-weight: 600;
+   font-family: "Raleway", sans-serif;
+   font-optical-sizing: auto;
    border-bottom: 2px solid;
 }
 header .container p a:hover {
@@ -273,7 +287,7 @@ header .container > * + * {
 
 .works {
    width: 400px;
-   border: 2px solid #390e73;
+   border: 2px solid #c7cb54;
    justify-content: center;  /* Centers the image horizontally */
    align-items: center;  /* Adds a solid border */
 }
@@ -297,7 +311,7 @@ nav {
    display: flex;
    background-color: var(--color-secondary);
    border-bottom: 4px solid var(--color-primary);
-   font-size: 1rem;
+   font-size: 2.25rem;
    width: 100%;
    margin-bottom: 2rem;
 }
@@ -370,7 +384,7 @@ nav a {
    position: relative;
    padding: 1em;
    line-height: 1;
-   font-size: 1rem;
+   font-size: 1.25rem;
 }
 @media all and (min-width: 1300px) {
    nav a {
@@ -598,16 +612,16 @@ article {
    padding: 6rem 2rem 3rem 2rem;
    position: relative;
    background: repeating-radial-gradient(
-         var(--color-secondary),
-         var(--color-secondary) 6px,
+         var(--color-primary-alt),
+         var(--color-primary-alt), 6px,
          var(--color-primary) 6px,
          var(--color-primary) 10px,
          transparent 0%,
          transparent 100%
       ),
       repeating-radial-gradient(
-         var(--color-secondary),
-         var(--color-secondary) 6px,
+         var(--color-primary-alt),
+         var(--color-primary-alt) 6px,
          var(--color-primary) 6px,
          var(--color-primary) 10px,
          transparent 0%,
@@ -633,8 +647,8 @@ article {
 }
 
 .paragraphs {
-   font-family: "Fahkwang";
-   font-weight: bold;
+   font-family: "Raleway";
+
    font-size: 16px;
 }
 
@@ -666,10 +680,10 @@ img {
 
 .polaroid {
 	width: 75%;
-	max-width: 400px;
+	max-width: 500px;
 	position: sticky;
 	top: 10vw;
-	box-shadow: 0 0.5vw 1vw 0 rgba(#000, 0.1);
+	box-shadow: 0 0.5vw 1vw 0 rgba(#485459, 0.1);
 	&:nth-child(1) {
 		transform: rotate(4deg) translatex(2vw);
 	}
@@ -685,7 +699,7 @@ img {
 
 .card {
 	aspect-ratio: 3 / 2;
-	border: 2px solid #390e73;
+	border: 2px solid #f79827;
 	background-color: #fffcee;
 	position: relative;
 	transition: 0.15s ease;
@@ -707,7 +721,7 @@ img {
 
 .image {
 	width: 100%;
-	border: 2px solid #390e73;
+	border: 2px solid #c7cb54;
 	background-color: #fffcee;
 	position: relative;
 	img {
@@ -742,7 +756,7 @@ img {
   }
 
 .brand span {
-	color: #390e73;
+	color: #f79827;
 }
 
 .wrapper {
@@ -796,14 +810,14 @@ img {
 .contact form textarea {
 	width: 100%;
 	padding: 1em;
-	border: solid 1px #390e73;
+	border: solid 1px #f79827;
 	border-radius: 4px;
 }
 
 .contact form button:hover,
 .contact form button:focus {
-  background: #9ca8b0;
-  color: #390e73;
+  background: #1e4762;
+  color: #c7cb54;
   outline: 3px;
   transition: background-color 3s ease-out;
 }
@@ -814,7 +828,7 @@ img {
 }
 
 .contact form button {
-	background: #390e73;
+	background: #c7cb54;
 	border: 0;
 	color: #fffcee;
 	text-transform: uppercase;
@@ -854,8 +868,8 @@ img {
    font-size: 1rem;
    background: linear-gradient(
       -45deg,
-      var(--color-secondary),
-      var(--color-secondary) 25%,
+      var(--color-primary-alt),
+      var(--color-primary-alt) 25%,
       var(--color-primary) 25%,
       var(--color-primary) 50%,
       var(--color-secondary) 50%,
