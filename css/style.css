@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
    --font-family-primary: "Raleway", sans-serif;
@@ -12,26 +12,93 @@
 
 @media all and (min-width: 1300px) {
    :root {
-      --font-size-h1: 2.5rem;
-      --font-size-h2: 2.5rem;
-      --font-size-h3: 1.5rem;
-      --font-size-h4: 1.125rem;
+      --font-size-h1: 3rem;
+      --font-size-h2: 2.75rem;
+      --font-size-h3: 1.75rem;
+      --font-size-h4: 1.25rem;
       --font-size-text: 1.125rem;
    }
 }
 
-body {
-   min-height: 100vh;
-   font-size: var(--font-size-text);
+header {
+   background-color: transparent;
+   border-bottom: none;
+   width: 100%;
+   left: 0;
+   top: 0;
+}
+
+.hero {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px;
+}
+
+.hero-image {
+   margin-top: -120px;
+   z-index: 1;
+   position: relative;
+   flex: 1;
+}
+
+.hero-image img {
+   width: 100%;
+   height: auto;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 20px;
+}
+
+#about {
+   margin-left: 20px;
+}
+
+
+nav {
+   display: flex;
+   border-bottom: 4px solid #f1e2c0;
+   width: 95%;
+   margin-bottom: 1rem;
+   left: 4rem;
+   z-index: 100; /* Make sure the navbar stays on top */
+   position: relative;
+}
+
+nav ul {
+   list-style: none;
+   padding: 0;
+   display: flex;
+   justify-content: space-between; /* or flex-start, if needed */
+   flex-wrap: nowrap; /* Prevents wrapping */
+}
+
+nav ul li {
+   margin-right: 1rem; /* Adds space between items */
+}
+
+nav ul li:last-child {
+   margin-right: 0; /* No margin on the last item */
+}
+
+nav a {
+   display: inline-block; /* Ensures proper alignment */
+   padding: 0.75em 1.5em;
    line-height: 1.5;
-   font-family: var(--font-family-primary);
-   color: var(--color-primary);
-   overflow-x: hidden;
+   white-space: nowrap; /* Keeps text on one line */
+}
+.paragraphs {
+   margin: 0;
 }
 
 img {
    display: block;
    max-width: 100%;
+   height: auto;
 }
 
 a {
@@ -39,10 +106,7 @@ a {
    text-decoration: none;
 }
 
-input,
-button,
-textarea,
-select {
+input, button, textarea, select {
    font: inherit;
 }
 
@@ -50,38 +114,15 @@ strong {
    font-weight: 600;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
    color: #69492a;
-   font-family: "Josefin Slab";
-}
-
-h1 {
-   font-size: var(--font-size-h1);
-   line-height: 1.25;
-}
-
-h2 {
-   font-size: var(--font-size-h2);
-   line-height: 1.25;
+   font-family: "Josefin Slab", serif;
 }
 
 @media all and (min-width: 1300px) {
    body {
-      padding-top: 8rem;
+      padding-top: 1rem;
    }
-}
-
-header {
-   background-color: var(--color-secondary);
-   border-bottom: 4px solid var(--color-primary);
-   width: 100%;
-   z-index: 100;
-   position: fixed;
-   left: 0;
-   top: 0;
 }
 
 header .container {
@@ -99,39 +140,6 @@ header p {
    font-size: 1rem;
 }
 
-@media all and (min-width: 1300px) {
-   header .container {
-      padding: 0;
-   }
-}
-
-nav {
-   display: flex;
-   border-bottom: 4px solid var(--color-primary);
-   width: 95%;
-   height: 60px;
-   margin-bottom: 2rem;
-   z-index: 100;
-   position: fixed;
-   top: 8rem;
-   left: 4rem;
-}
-
-nav ul {
-   list-style: none;
-   padding: 0;
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-}
-
-
-nav a {
-   display: flex;
-   align-items: center;
-   padding: 1em;
-}
-
 .features li > span {
    display: flex;
    flex-direction: column;
@@ -141,14 +149,14 @@ nav a {
    width: 100%;
    padding: 1em;
    border: 4px solid;
-   box-shadow: inset -4px -4px 0 var(--color-primary-alt);
+   box-shadow: inset -4px -4px 0 orangered;
 }
 
 .features li > span:hover {
-   background-color: var(--color-primary);
-   box-shadow: inset -4px -4px 0 var(--color-primary);
-   color: var(--color-secondary);
-   border-color: var(--color-primary);
+   background-color: #f1e2c0;
+   box-shadow: inset -4px -4px 0 orangered;
+   color: orangered;
+   border-color: #69492a;
 }
 
 .page-footer ul a {
