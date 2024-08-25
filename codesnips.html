@@ -1,0 +1,1260 @@
+/* Inspired by this pen by Pieter Biesemans https://codepen.io/pieter-biesemans/pen/BQBWXX and My Mother Before Me project http://mymotherbeforeme.com/ */
+
+body {
+  font-family: Hepta Slab, sans-serif;
+  font-weight: 500;
+  background: #efecdb;
+  color: #5D4037;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* hide scrollbar */
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
+}
+.external {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.horizontal-scroll-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vh;
+  transform: rotate(-90deg) translate3d(0,-100vh,0);
+  transform-origin: right top;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+  height: 100vw;
+  perspective: 1px;
+	transform-style: preserve-3d;
+  padding-bottom: 10rem;
+}
+.img-wrapper {
+  transform: rotate(90deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  transform-origin: 50% 50%;
+  transform: rotate(90deg) translateZ(.1px) scale(0.9) translateX(0px) translateY(-3vh);
+  transition: 1s;
+}
+
+.img-wrapper:hover {
+ min-height: 65vh;
+}
+
+.slower {
+  transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(0%) translateY(-10vh);
+}
+.slower1 {
+  transform: rotate(90deg) translateZ(-.25px) scale(1.05) translateX(0%) translateY(8vh);
+}
+.slower2 {
+  transform: rotate(90deg) translateZ(-.3px) scale(1.3) translateX(0%) translateY(2vh);
+}
+.slower-down {
+  transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(0%) translateY(16vh) ;
+}
+.faster {
+  transform: rotate(90deg) translateZ(.15px) scale(0.8) translateX(0%) translateY(14vh) ;
+}
+.faster1 {
+  transform: rotate(90deg) translateZ(.05px) scale(0.8) translateX(0%) translateY(10vh) ;
+}
+.fastest {
+  transform: rotate(90deg) translateZ(.22px) scale(0.7) translateX(-10vh) translateY(-15vh) ;
+}
+.vertical {
+   transform: rotate(90deg) translateZ(-.15px) scale(1.15) translateX(0%) translateY(0%) ;
+}
+.last {
+  transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(25vh) translateY(-8vh) ;
+}
+.scroll-info, header {
+  position: absolute;
+  left: 1rem;
+}
+
+
+header {
+  bottom: 1rem;
+}
+.scroll-info {
+  top: 1rem;
+}
+a {
+  color: inherit;
+  font-weight: 500;
+  
+}
+h1 {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.img-wrapper a {
+  overflow: hidden;
+  display: block;
+  padding: 1vh ;
+  background: #efecdb;
+  box-shadow: 0 10px 50px #5f2f1182;
+}
+img {
+  max-width: 45vh;
+  max-height: 50vh;
+  transition: .5s;
+  vertical-align: top;
+  filter: saturate(40%) sepia(30%) hue-rotate(5deg);
+}
+a:hover img {
+  filter: none;
+}
+p {
+  margin: 0;
+}
+.scroll-info {
+  display: flex;
+  align-items: center;
+}
+.icon svg {
+    width: 50px;
+    fill: currentcolor;
+}
+
+<div class="external">
+    <div class="horizontal-scroll-wrapper">
+      <div class="img-wrapper slower">
+        <a href="https://altphotos.com/photo/stylish-parisian-cafe-terrace-279/" target="_blank" rel="noopener"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/paris-cafe-terrace.jpg" alt="">
+        </a>
+      </div>
+  
+      <div class="img-wrapper faster">
+        <a href="https://altphotos.com/photo/retro-boy-doll-wearing-elegant-clothes-330/" target="_blank" rel="noopener">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/antiquedollboy.jpg" alt="">
+        </a>
+      </div>
+  
+      <div class="img-wrapper slower vertical">
+        <a href="https://altphotos.com/photo/clocks-shop-exposition-window-reflecting-the-streets-277/" target="_blank" rel="noopener">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/windowshopclock.jpg" alt="">
+        </a>
+      </div>
+  
+      <div class="img-wrapper slower slower-down">
+        <a href="https://altphotos.com/photo/swans-and-ducks-swimming-in-a-river-264/" target="_blank" rel="noopener">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/swanduckriver.jpg" alt="">
+        </a>
+      </div>
+  
+      <div class="img-wrapper">
+        <a href="https://altphotos.com/photo/sidewalk-terrace-of-a-blue-facade-cafe-312/" target="_blank" rel="noopener">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/cafe-terrace.jpg" alt="">
+        </a>
+      </div>
+  
+      <div class="img-wrapper slower">
+        <a href="https://altphotos.com/photo/paris-waterfront-at-sunset-1555/" target="_blank" rel="noopener">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/paris-seine-boat.jpg" alt="">
+        </a>
+      </div>
+  
+      <div class="img-wrapper faster1">
+        <a href="https://altphotos.com/photo/old-man-leaning-over-the-barrier-looking-at-the-river-265/" target="_blank" rel="noopener">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/old-man-river.jpg" alt="">
+        </a>
+      </div>
+      
+      <div class="img-wrapper slower slower2">
+        <a href="https://altphotos.com/photo/cafe-terrace-with-a-row-of-retro-tables-261/" target="_blank" rel="noopener">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/cafe-table-street.jpg" alt="">
+        </a>
+      </div>
+      
+      <div class="img-wrapper">
+        <a href="https://altphotos.com/photo/street-scene-with-pedestrians-and-dogs-318/" target="_blank" rel="noopener">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/street-scene-people.jpg" alt="">
+        </a>
+      </div>
+      
+      <div class="img-wrapper slower">
+        <a href="https://altphotos.com/photo/tourist-barge-on-the-river-seine-near-notre-dame-266/" target="_blank" rel="noopener">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/notre-dame-river-boat.jpg" alt="">
+        </a>
+      </div>
+      
+      <div class="img-wrapper slower last">
+        <a href="https://altphotos.com/photo/skulls-decoration-in-a-shop-window-331/" target="_blank" rel="noopener">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/shop-window-reflection.jpg" alt="">
+        </a>
+      </div>
+    </div>
+    <p class="scroll-info"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" ><path d="M50,67.1c-0.6,0-1.2-0.2-1.8-0.7c-3.8-3.8-7.7-7.7-11.5-11.5c-2.3-2.3,1.2-5.8,3.5-3.5c2.5,2.5,4.9,4.9,7.4,7.4      c0-13.7,0-27.4,0-41.2c0-0.6,0.2-1.2,0.5-1.5c0,0,0,0,0,0c0.4-0.6,1.1-1,2-0.9c13.7,0.3,26.4,7.2,33.5,19.1      C96.5,55.9,84.7,85,60.2,91.6C35.5,98.2,11.6,79.1,11.1,54c-0.1-3.2,4.9-3.2,5,0c0.3,13.8,8.4,26.4,21.3,31.5      c12.5,5,27.1,1.9,36.6-7.5c9.5-9.5,12.5-24.1,7.5-36.6c-4.8-12.1-16.3-20.1-29-21.2c0,12.8,0,25.5,0,38.3      c2.5-2.5,4.9-4.9,7.4-7.4c2.3-2.3,5.8,1.3,3.5,3.5c-3.9,3.9-7.8,7.8-11.8,11.8C51.2,66.9,50.6,67.1,50,67.1z"/></svg></span> Try scrolling down</p>
+    <header>
+    <p>Postcards from Paris.</p>
+    <h1>Css-only parallax horizontal gallery</h1>
+      <p>Grab (these and more) photos from - <a href="https://altphotos.com/free/paris/" target="_blank" rel="noopener">altphotos.</a></p>
+    </header>
+  </div>
+  
+  ____________________________
+  <section>
+    <h2>leading companies<br />have trusted us</h2>
+    <div class="container">
+      <div class="card">
+        <div class="card-inner" style="--clr:#fff;">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://images.unsplash.com/photo-1601049676869-702ea24cfd58?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Trust & Co.">
+            </div>
+            <div class="icon">
+              <a href="#" class="iconBox"> <span class="material-symbols-outlined">
+                  arrow_outward
+                </span></a>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <h3>trust &amp; co.</h3>
+          <p>Fill out the form and the algorithm will offer the right team of experts</p>
+          <ul>
+            <li style="--clr-tag:#d3b19a;" class="branding">branding</li>
+            <li style="--clr-tag:#70b3b1;" class="packaging">packaging</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner" style="--clr:#fff;">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://images.unsplash.com/photo-1613235788366-270e7ac489f3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tonic">
+            </div>
+            <div class="icon">
+              <a href="#" class="iconBox"> <span class="material-symbols-outlined">
+                  arrow_outward
+                </span></a>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <h3>tonic</h3>
+          <p>Fill out the form and the algorithm will offer the right team of experts</p>
+          <ul>
+            <li style="--clr-tag:#d3b19a;" class="branding">branding</li>
+            <li style="--clr-tag:#d05fa2;" class="marketing">marketing</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner" style="--clr:#fff;">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://images.unsplash.com/photo-1673847401561-fcd75a7888c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Shower Gel">
+            </div>
+            <div class="icon">
+              <a href="#" class="iconBox"> <span class="material-symbols-outlined">
+                  arrow_outward
+                </span></a>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <h3>shower gel</h3>
+          <p>Fill out the form and the algorithm will offer the right team of experts</p>
+          <ul>
+            <li style="--clr-tag:#d3b19a;" class="branding">branding</li>
+            <li style="--clr-tag:#70b3b1;" class="packaging">packaging</li>
+            <li style="--clr-tag:#d05fa2;" class="marketing">marketing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  ___________________________
+  %header
+  .container
+    %h1 Direction-aware hover effect
+    %p CSS &amp; bits of JS
+.container
+  %ul
+    - 12.times do
+      %li
+        %a{:href => "#", :class => "normal"}
+          %svg{:viewBox => "0 0 80 76", :x => "0px", :y => "0px"}
+            %g
+              %path{:d => "M 68.9708 24.8623 L 60.4554 2.3018 C 59.9641 0.7017 58.1628 -0.2583 56.5252 0.3817 L 1.9822 20.2222 C 0.3822 20.7022 -0.4179 22.6222 0.2222 24.2223 L 8.8624 47.7797 L 8.8624 35.1484 C 8.8624 29.5024 13.3425 24.8623 18.8857 24.8623 L 32.9442 24.8623 L 50.63 12.862 L 60.7829 24.8623 L 68.9708 24.8623 L 68.9708 24.8623 ZM 77.098 32.0625 L 18.8857 32.0625 C 17.2512 32.0625 16.0625 33.4511 16.0625 35.1484 L 16.0625 72.8491 C 16.0625 74.5477 17.2512 75.9375 18.8857 75.9375 L 77.098 75.9375 C 78.742 75.9375 79.9376 74.5477 79.9376 72.8491 L 79.9376 35.1484 C 79.9376 33.4511 78.742 32.0625 77.098 32.0625 L 77.098 32.0625 ZM 73.0626 68.0625 L 23.9375 68.0625 L 23.9375 61.0852 L 31.4704 43.7232 L 42.7696 57.6777 L 53.4138 46.8062 L 67.1695 41.9375 L 73.0626 55.0815 L 73.0626 68.0625 L 73.0626 68.0625 Z"}
+        .info
+          %h3 Single-origin coffee whatever
+          %p Williamsburg tofu polaroid, 90's Bushwick irony locavore ethnic meh messenger bag Truffaut jean shorts.
+          ___________________CSS
+          @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+$duration: 300ms;
+$timing-fn: ease;
+$turquoise: #1ABC9C;
+$wet-asphalt: #34495E;
+$midnight-blue: #2C3E50;
+$clouds: #ECF0F1;
+
+/* the important bits */
+li {
+  perspective: 400px;
+}
+
+.info {
+  // hide-initial-state
+  transform: rotate3d(1,0,0, 90deg);
+  
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  pointer-events: none;
+  background-color: transparentize($turquoise, .1);
+}
+
+.in-top .info {
+   transform-origin: 50% 0%;
+   animation: in-top $duration $timing-fn 0ms 1 forwards;
+}
+.in-right .info {
+  transform-origin: 100% 0%;
+  animation: in-right $duration $timing-fn 0ms 1 forwards;
+}
+.in-bottom .info {
+  transform-origin: 50% 100%;
+  animation: in-bottom $duration $timing-fn 0ms 1 forwards;
+}
+.in-left .info {
+  transform-origin: 0% 0%;
+  animation: in-left $duration $timing-fn 0ms 1 forwards;
+}
+
+.out-top .info {
+  transform-origin: 50% 0%;
+  animation: out-top $duration $timing-fn 0ms 1 forwards;
+}
+.out-right .info {
+  transform-origin: 100% 50%;
+  animation: out-right $duration $timing-fn 0ms 1 forwards;
+}
+.out-bottom .info {
+  transform-origin: 50% 100%;
+  animation: out-bottom $duration $timing-fn 0ms 1 forwards;
+}
+.out-left .info {
+  transform-origin: 0% 0%;
+  animation: out-left $duration $timing-fn 0ms 1 forwards;
+}
+
+@keyframes in-top {
+  from {transform: rotate3d(-1,0,0, 90deg)}
+  to   {transform: rotate3d(0,0,0, 0deg)}}
+@keyframes in-right {
+  from {transform: rotate3d(0,-1,0, 90deg)}
+  to   {transform: rotate3d(0,0,0, 0deg)}}
+@keyframes in-bottom {
+  from {transform: rotate3d(1,0,0, 90deg)}
+  to   {transform: rotate3d(0,0,0, 0deg)}}
+@keyframes in-left {
+  from {transform: rotate3d(0,1,0, 90deg)}
+  to   {transform: rotate3d(0,0,0, 0deg)}}
+
+@keyframes out-top {
+  from {transform: rotate3d(0,0,0, 0deg)}
+  to   {transform: rotate3d(-1,0,0, 104deg)}}
+@keyframes out-right {
+  from {transform: rotate3d(0,0,0, 0deg)}
+  to   {transform: rotate3d(0,-1,0, 104deg)}}
+@keyframes out-bottom {
+  from {transform: rotate3d(0,0,0, 0deg)}
+  to   {transform: rotate3d(1,0,0, 104deg)}}
+@keyframes out-left {
+  from {transform: rotate3d(0,0,0, 0deg)}
+  to   {transform: rotate3d(0,1,0, 104deg)}}
+
+
+/* you can ignore this ones */
+ul {
+  padding: 0;
+  margin: 0 0 50px;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+li {
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  padding: 0;
+  list-style: none;
+  
+  a  {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  h3 {
+    margin: 0;
+    font-size: 16px;
+    color: transparentize(#fff, .1);
+  }
+  
+  p  {
+    font-size: 12px;
+    line-height: 1.5;
+    color: transparentize(#fff, .2);
+  }
+  
+  .normal {
+    width: 100%;
+    height: 100%;
+    background-color: $clouds;
+    color: transparentize($wet-asphalt, .4);
+    box-shadow: inset 0 2px 20px darken($clouds, 2);
+    text-align: center;
+    font-size: 50px;
+    line-height: 200px;
+    
+    svg {
+      pointer-events: none;
+      width: 50px;
+      path {
+        fill: transparentize($wet-asphalt, .8);
+      }
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+h1 {
+  margin: 0 auto 5px;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Bree Serif', serif;
+}
+
+.container {
+  width: 840px;
+  margin: 0 auto;
+}
+
+header {
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+  margin: 50px 0 25px;
+  color: $wet-asphalt;
+  
+  p {
+    margin: 0;
+    color: transparentize($wet-asphalt, .6);
+  }
+}
+
+_____________________
+// - Noel Delgado | @pixelia_me
+
+const nodes = [].slice.call(document.querySelectorAll('li'), 0);
+const directions  = { 0: 'top', 1: 'right', 2: 'bottom', 3: 'left' };
+const classNames = ['in', 'out'].map((p) => Object.values(directions).map((d) => `${p}-${d}`)).reduce((a, b) => a.concat(b));
+
+const getDirectionKey = (ev, node) => {
+  const { width, height, top, left } = node.getBoundingClientRect();
+  const l = ev.pageX - (left + window.pageXOffset);
+  const t = ev.pageY - (top + window.pageYOffset);
+  const x = (l - (width/2) * (width > height ? (height/width) : 1));
+  const y = (t - (height/2) * (height > width ? (width/height) : 1));
+  return Math.round(Math.atan2(y, x) / 1.57079633 + 5) % 4;
+}
+
+class Item {
+  constructor(element) {
+    this.element = element;    
+    this.element.addEventListener('mouseover', (ev) => this.update(ev, 'in'));
+    this.element.addEventListener('mouseout', (ev) => this.update(ev, 'out'));
+  }
+  
+  update(ev, prefix) {
+    this.element.classList.remove(...classNames);
+    this.element.classList.add(`${prefix}-${directions[getDirectionKey(ev, this.element)]}`);
+  }
+}
+
+nodes.forEach(node => new Item(node));
+
+__________________________
+<main>
+    <div class="info">
+      <div>
+        ▸ Inspired by the site of
+        <a
+          target="_blank"
+          href="https://www.awwwards.com/inspiration/camping-with-kona-kona-digital-studio"
+        >
+          Hyundai
+        </a>
+      </div>
+      <div>
+        ▸ Recreated by
+        <a target="_blank" href="https://twitter.com/deadrabbbbit"> @deadrabbbbit </a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="center">
+        <div class="items">
+          <div class="item">
+            <div class="card">
+              <img
+                class="image"
+                src="https://www.themoviedb.org/t/p/original/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                class="image"
+                src="https://www.themoviedb.org/t/p/original/aWh8R6jeAbmiB4TsF6CjYFrUsI8.jpg"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                class="image"
+                src="https://www.themoviedb.org/t/p/w220_and_h330_face/3Tf8vXykYhzHdT0BtsYTp570JGQ.jpg"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                class="image"
+                src="https://www.themoviedb.org/t/p/original/zxVEkxgreRkFkh1rBK85T2JyxFY.jpg"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                class="image"
+                src="https://www.themoviedb.org/t/p/original/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                class="image"
+                src="https://www.themoviedb.org/t/p/w220_and_h330_face/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                class="image"
+                src="https://www.themoviedb.org/t/p/original/vKEBse3BPU7crfAjdPNaC6WePnO.jpg"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                class="image"
+                src="https://www.themoviedb.org/t/p/w220_and_h330_face/mfnkSeeVOBVheuyn2lo4tfmOPQb.jpg"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                class="image"
+                src="https://www.themoviedb.org/t/p/w220_and_h330_face/bCj4EfuehAlgBwVd3diyWyhuuau.jpg"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                class="image"
+                src="https://www.themoviedb.org/t/p/original/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                class="image"
+                src="https://www.themoviedb.org/t/p/original/aWh8R6jeAbmiB4TsF6CjYFrUsI8.jpg"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                class="image"
+                src="https://www.themoviedb.org/t/p/w220_and_h330_face/3Tf8vXykYhzHdT0BtsYTp570JGQ.jpg"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                class="image"
+                src="https://www.themoviedb.org/t/p/original/zxVEkxgreRkFkh1rBK85T2JyxFY.jpg"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                class="image"
+                src="https://www.themoviedb.org/t/p/original/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                class="image"
+                src="https://www.themoviedb.org/t/p/w220_and_h330_face/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                class="image"
+                src="https://www.themoviedb.org/t/p/original/vKEBse3BPU7crfAjdPNaC6WePnO.jpg"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                class="image"
+                src="images/24.png" alt="flower" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                class="image"
+                src="images/bewitchedss.jpg" alt="magical business" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  *,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: black;
+  background-color: white;
+  font-weight: 600;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  height: -webkit-fill-available;
+  position: absolute;
+  left: 0;
+  top: 0;
+  user-select: none;
+  overflow: hidden;
+}
+
+.center {
+  height: 100vh;
+  position: absolute;
+  left: 50%;
+  top: 28%;
+  transform: translate(-50%);
+  user-select: none;
+}
+
+.items {
+  transform-origin: center 200vh;
+  transform: rotate(0);
+  user-select: none;
+  display: flex;
+}
+
+.item {
+  position: absolute;
+  user-select: none;
+  cursor: pointer;
+  transform: translateX(-50%);
+}
+
+.card {
+  display: block;
+  width: 430px;
+  height: 610px;
+  color: #fff;
+  user-select: none;
+  border-radius: 17px;
+  overflow: hidden;
+  cursor: grab;
+  position: relative;
+  border: 10px solid black;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: grayscale(100);
+  pointer-events: none;
+}
+
+@media screen and (max-height: 1000px) {
+  .card {
+    width: 350px;
+    height: 497px;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .card {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+.info {
+  position: absolute;
+  z-index: 20;
+  top: 10px;
+  left: 10px;
+}
+
+a {
+  color: black;
+  opacity: 80;
+  text-decoration: underline;
+}
+
+
+const images = gsap.utils.toArray(".item");
+
+const imageSize = images.length;
+const total = images.length;
+const degree = 360 / total;
+
+const init = () => {
+  const timeline = gsap.timeline();
+
+  images.forEach((image, index) => {
+    const sign = Math.floor((index / 2) % 2) ? 1 : -1;
+    const value = Math.floor((index + 4) / 4) * 4;
+    const rotation = index > imageSize - 3 ? 0 : sign * value;
+    console.log(rotation);
+
+    gsap.set(image, {
+      rotation: rotation,
+      scale: 0.5,
+    });
+
+    timeline.from(
+      image,
+      {
+        x: () =>
+          index % 2
+            ? window.innerWidth + image.clientWidth * 4
+            : -window.innerWidth - image.clientWidth * 4,
+        y: () => window.innerHeight - image.clientHeight,
+        rotation: index % 2 ? 200 : -200,
+        scale: 4,
+        opacity: 1,
+        ease: "power4.out",
+        duration: 1,
+        delay: 0.15 * Math.floor(index / 2),
+      },
+      0
+    );
+
+    let rotationAngle = index * degree;
+    timeline.to(
+      image,
+      {
+        scale: 1,
+        duration: 0,
+      },
+      0.15 * (imageSize / 2 - 1) + 1
+    );
+
+    timeline.to(
+      image,
+      {
+        transformOrigin: "center 200vh",
+        rotation:
+          index > imageSize / 2 ? -degree * (imageSize - index) : rotationAngle,
+        duration: 1,
+        ease: "power1.out",
+      },
+      0.15 * (imageSize / 2 - 1) + 1
+    );
+  });
+};
+
+const draggable = () => {
+  let start = 0;
+  Draggable.create(".items", {
+    type: "rotation",
+
+    onDragStart: function () {
+      start = this.rotation;
+    },
+    onDragEnd: function () {
+      const rotation = this.rotation;
+      const offset = Math.abs(rotation - start);
+      if (rotation > start) {
+        if (rotation - start < degree / 2) {
+          gsap.to(".items", {
+            rotation: `-=${offset}`,
+          });
+        } else {
+          gsap.to(".items", {
+            rotation: `+=${2 * degree - offset}`,
+          });
+        }
+      } else {
+        if (Math.abs(rotation - start) < degree / 2) {
+          gsap.to(".items", {
+            rotation: `+=${offset}`,
+          });
+        } else {
+          gsap.to(".items", {
+            rotation: `-=${2 * degree - offset}`,
+          });
+        }
+      }
+    },
+  });
+};
+
+init();
+draggable();
+
+
+<article class="gallery">
+  <img src="https://assets.codepen.io/1506195/unsplash-music-0.avif" alt="guitar player at concert" />
+  <img src="https://assets.codepen.io/1506195/unsplash-music-1.avif" alt="duo singing" />
+  <img src="https://assets.codepen.io/1506195/unsplash-music-2.avif" alt="crowd cheering" />
+  <img src="https://assets.codepen.io/1506195/unsplash-music-3.avif" alt="singer performing" />
+  <img src="https://assets.codepen.io/1506195/unsplash-music-4.avif" alt="singer fistbumping crowd" />
+  <img src="https://assets.codepen.io/1506195/unsplash-music-5.avif" alt="man with a guitar singing" />
+  <img src="https://assets.codepen.io/1506195/unsplash-music-6.avif" alt="crowd looking at a lighted stage" />
+  <img src="https://assets.codepen.io/1506195/unsplash-music-7.avif" alt="woman singing on stage" />
+</article>
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.gallery {
+  --size: 100px;
+  display: grid;
+  grid-template-columns: repeat(6, var(--size));
+  grid-auto-rows: var(--size);
+  margin-bottom: var(--size);
+  place-items: start center;
+  gap: 5px;
+  
+  &:has(:hover) img:not(:hover),
+  &:has(:focus) img:not(:focus){
+    filter: brightness(0.5) contrast(0.5);
+  }
+
+  & img {
+    object-fit: cover;
+    width: calc(var(--size) * 2);
+    height: calc(var(--size) * 2);
+    clip-path: path("M90,10 C100,0 100,0 110,10 190,90 190,90 190,90 200,100 200,100 190,110 190,110 110,190 110,190 100,200 100,200 90,190 90,190 10,110 10,110 0,100 0,100 10,90Z");
+    transition: clip-path 0.25s, filter 0.75s;
+    grid-column: auto / span 2;
+    border-radius: 5px;
+
+    &:nth-child(5n - 1) { 
+      grid-column: 2 / span 2 
+    }
+
+    &:hover,
+    &:focus {
+      clip-path: path("M0,0 C0,0 200,0 200,0 200,0 200,100 200,100 200,100 200,200 200,200 200,200 100,200 100,200 100,200 100,200 0,200 0,200 0,100 0,100 0,100 0,100 0,100Z");
+      z-index: 1;
+      transition: clip-path 0.25s, filter 0.25s;
+    }
+    
+    &:focus {
+      outline: 1px dashed black;
+      outline-offset: -5px;
+    }
+  }
+}
+
+________________________
+<div class="container">
+  <h1>Gallery</h1>
+
+  <div class="gallery-wrap">
+    <div class="item item-1"></div>
+    <div class="item item-2"></div>
+    <div class="item item-3"></div>
+    <div class="item item-4"></div>
+    <div class="item item-5"></div>
+  </div>
+ </div>
+GALLERY (accordion)
+<div class="social">
+  <a href="https://twitter.com/StefCharle" target="_blank">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/149103/twitter.svg" alt="">
+  </a>
+</div>
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+.container{
+  padding: 75px 0;
+  margin: 0 auto;
+  width: 1140px;
+}
+
+h1{
+  position: relative;
+  margin-bottom: 45px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 44px;
+  text-transform: uppercase;
+  color: #424242;
+}
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+  
+  &:hover{
+    flex: 7;
+  }
+}
+
+.item-1 { 
+  background-image: url('https://images.unsplash.com/photo-1499198116522-4a6235013d63?auto=format&fit=crop&w=1233&q=80');
+}
+
+.item-2 { 
+  background-image: url('https://images.unsplash.com/photo-1492760864391-753aaae87234?auto=format&fit=crop&w=1336&q=80');
+}
+
+.item-3 { 
+  background-image: url('https://images.unsplash.com/photo-1503631285924-e1544dce8b28?auto=format&fit=crop&w=1234&q=80');
+}
+
+.item-4 { 
+  background-image: url('https://images.unsplash.com/photo-1510425463958-dcced28da480?auto=format&fit=crop&w=1352&q=80');
+}
+
+.item-5 { 
+  background-image: url('https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1234&q=80');
+}
+
+.social{
+  position: absolute;
+  right: 35px;
+  bottom: 0;
+  
+  img{
+    display: block;
+    width: 32px;
+  }
+}
+
+<article>
+	<figure>
+		<img src='https://unsplash.it/450/800?image=508' alt />
+	</figure>
+	<section>
+			<div>
+				<h1>Scrolling half by half</h1>
+				<p>Made in pure #CSS and almost all is "old properties" method. And a bit imagination.<br/>
+				Yes, the flexbox is old now.</p>
+			</div>
+	</section>
+	
+	<figure>
+		<img src='https://unsplash.it/450/800?image=817' alt />
+	</figure>
+	<section>
+		<div>
+			<h2>I'm Kseso,<br/>
+			&ldquo;a #obCSServer&rdquo;</h2>
+			<p>Ramajero Argonauta, Enredique Amanuense de #CSS.</p>
+		</div>
+	</section>
+	
+	<figure>
+		<img src='https://unsplash.it/450/800?image=948' alt />
+	</figure>
+	<section>
+		<div>
+			<h2><a href='https://escss.blogspot.com'>&xi;sCSS Blog</a></h2>
+			<p>#impoCSSible inside EsCSS. A Spanish #CSS blog where the borders & limits of #CSS disappear.</p>
+		</div>
+	</section>
+	
+	<figure>
+		<img src='https://unsplash.it/450/800?image=737' alt />
+	</figure>
+	<section>
+		<div>
+			<h2>#impoCSSible is nothing</h2>
+			<p>You don´t need Javascript or #CSS processors either for almost 100% of what you want to do.</p>
+		</div>
+	</section>
+	
+	<figure>
+		<img src='https://unsplash.it/450/800?image=870' alt />
+	</figure>
+	<section>
+		<div>
+			<h2>Idea from E.Bouças´s <a href='https://codepen.io/eduardoboucas/full/qdaOWv/'>pen</a></h2>
+			<p>Without jQuery or Javascript, nor fixed position (bye IOs problems)</p>
+		</div>
+	</section>
+	
+	<figure>
+		<img src='https://unsplash.it/450/800?image=743' alt />
+	</figure>
+	<section>
+		<div>
+			<h2>Images from unsplash.it</h2>
+			<p>Because it´s the best for demos. Thanks, guys!</p>
+		</div>
+	</section>
+	
+	<figure>
+		<img src='https://unsplash.it/450/800?image=452' alt />
+	</figure>
+	<section>
+		<div>
+			<h2>show the PEN.<br/>
+				<a href='https://escss.blogspot.com/2017/08/scroll-half-by-half-pure-css.html'>link the POST</a></h2>
+			<p>Por una web con mucho estilo, para argonautas con buen gusto.</p>
+		</div>
+	</section>
+	
+</article>
+
+*,*:before,*:after {box-sizing:inherit;margin:0; padding:0; border:0 none; position: relative;}
+html {
+	background: #000;
+	box-sizing:border-box;
+	font-family: 'Vollkorn', sans-serif;
+	font-size: 1rem;
+	color: #000;
+}
+
+@media screen and (min-width: 700px) {
+	body > article {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	figure {
+		background: #eee;
+		width: calc( 50% + 1px);
+		height: 100vh;
+		margin: 0 auto 10vh 0;
+		position: sticky;
+		top: 0;
+		overflow: hidden;
+		box-shadow: 4px -4px 8px rgba(0,0,0,.4);
+			}
+	figure::after {
+		content: '';
+		position: absolute;
+		top: 5vmin;
+		right: 5vmin;
+		bottom: 5vmin;
+		left: 45%;
+		border: 2px dashed #fff;
+		outline: 1px solid #fff;
+		outline-offset: -5vmin;
+		backdrop-filter: grayscale(1);
+		pointer-events: none;
+			}
+	figure:nth-of-type(2n)::after {
+		right: 45%;
+		left: 5vmin;
+	}
+	section {
+		background: #e5e5e5;
+		width: calc(50% + 1px);
+		height: 100vh;
+		margin: 0 0 10vh auto;
+		position: sticky;
+		top: 0;
+		// overflow: hidden;
+		padding: 5vmin;
+		box-shadow: -4px -4px 8px rgba(0,0,0,.4);
+			}
+	figure:nth-of-type(1),
+	section:nth-of-type(1) {
+		margin: 0 0 10vh 0;
+		width: 50%;
+			}
+	figure:nth-of-type(2n) {
+		margin: 0 0 10vh auto;
+		box-shadow: -4px -4px 8px rgba(0,0,0,.4);
+			}
+	section:nth-of-type(2n) {
+		margin: 0 auto 10vh 0;
+		box-shadow: 4px -4px 8px rgba(0,0,0,.4);
+		}
+	figure:last-of-type,
+	section:last-of-type {
+		margin-bottom: 0;
+	}
+	section::before {
+		background: inherit;
+		z-index: 1;
+		content: '';
+		position: absolute;
+		top: 50%;
+		left:0;
+		width: 7vmin;
+		height: 7vmin;
+		transform: translate(calc(-50% + 1px), -50%) rotate(-45deg);
+		clip-path: polygon(-15% -15%, 110% 0%, 0% 110%);
+		box-shadow: -4px -2px 8px rgba(0,0,0,.4);
+		border-radius: 1.5vmin 0 0 0;
+	}
+	section:nth-of-type(2n)::before {
+		left:auto;
+		right: 0;
+		transform: translate(calc(50% - 1px), -50%) rotate(-45deg) scale(-1);
+	}
+	section::after {
+		content: '';
+		position: absolute;
+		top: 5vmin;
+		right: 45%;
+		bottom: 5vmin;
+		left: 5vmin;
+		border: 2px dashed #fff;
+		outline: 1px solid #fff;
+		outline-offset: -5vmin;
+		backdrop-filter: invert(1);
+		pointer-events: none;
+	}
+	section:nth-of-type(2n):after {
+		right: 5vmin;
+		left: 45%;
+	}
+	figure img {
+		min-width: 100%;
+		min-height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+	section > div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 100%;
+		padding: 1rem;
+	}
+	h1,
+	h2 {
+		margin: 15% 0 auto;
+		font-size: calc(5vmin + 3vmax);
+		text-align: center;
+		font-weight: 700;
+		line-height: 1;
+		word-spacing: .5rem;
+	}
+	p {
+		text-align: right;
+		width: 100%;
+		font-family: "Cormorant", serif;
+		font-weight: 400;
+		font-style: italic;
+		font-size: calc(1.5vmin + 1.75vmax);
+		margin-bottom: 5%;
+	}
+	a {
+		color: transparent;
+		-webkit-text-stroke: 2px #212121;
+		text-decoration: none;
+    font-weight: 900;
+    letter-spacing: 2px;
+	}
+	a:hover, a:focus {	
+		-webkit-text-stroke: 1px #999;
+	}
+}

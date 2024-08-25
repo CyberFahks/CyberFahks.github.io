@@ -36,7 +36,12 @@ margin-top: 0;
 overflow: auto;
 }
 
-
+imagetext {
+display: grid;
+grid-template-columns: 20% 20% 20% 20% 20%;
+grid-template-rows: 20% 20% 20% 20% 20%;
+flex-direction: row;
+}
 
 header {
 background-color: #f8efde;
@@ -767,17 +772,77 @@ font-weight: bold;
     text-align: left;
 };
 /* End main contact form */
-}
+* {
+
+
+  body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+  }
+  h1 {
+    color: coral;
+  }
+  .grid-container {
+    columns: 5 200px;
+    column-gap: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+    div {
+      width: 150px;
+      margin: 0 1.5rem 1.5rem 0;
+      display: inline-block;
+      width: 100%;
+      border: solid 2px black;
+      padding: 5px;
+      box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+      border-radius: 5px;
+      transition: all .25s ease-in-out;
+      &:hover img {
+        filter: grayscale(0);
+      }
+      &:hover {
+        border-color: coral;
+      }
+      img {
+        width: 100%;
+        filter: grayscale(100%);
+        border-radius: 5px;
+        transition: all .25s ease-in-out;
+      }
+      p {
+        margin: 5px 0;
+        padding: 0;
+        text-align: center;
+        font-style: italic;
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  
 .page-footer ul a {
 display: flex;
 align-items: center;
-padding: 0.75em 1em;
-font-size: 1rem;
-font-weight: 600;
-border: 4px solid;
-text-decoration: none;
-box-shadow: inset -4px -4px 0 var(--color-primary-alt);
-}
+padding: 0.75em 1em;@keyframes tonext {
+   75% {
+     left: 0;
+   }
+   95% {
+     left: 100%;
+   }
+   98% {
+     left: 100%;
+   }
+   99% {
+     left: 0;
+   }
+ }
 
 .page-footer ul a:hover {
 background-color: var(--color-primary);
