@@ -843,10 +843,10 @@ padding: 0.75em 1em;@keyframes tonext {
      left: 0;
    }
  }
-
 .page-footer ul a:hover {
 background-color: var(--color-primary);
 box-shadow: inset -4px -4px 0 var(--color-primary);
 color: var(--color-secondary);
 border-color: var(--color-primary);
+}
 }
