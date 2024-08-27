@@ -1,391 +1,227 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700 &family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&display=swap");:root {
-    --font-family-primary: "Raleway", sans-serif;
-    --font-family-secondary: "Josefin Slab", serif;
-    --color-primary: #d05145;
-    --color-secondary: #4c9887;
-    --font-size-h1: 3rem;
-    --font-size-h2: 2.75rem;
-    --font-size-h3: 1.75rem;
-    --font-size-h4: 1.25rem;
-    --font-size-text: 1.125rem;
-}
-
-@media all and(min-width: 1300px){:root {
-    --font-size-h1: 3rem;
-    --font-size-h2: 2.75rem;
-    --font-size-h3: 1.75rem;
-    --font-size-h4: 1.25rem;
-    --font-size-text: 1.125rem;
-}
-}
-
-html,
-body {
-height: 100%;
-margin: 0; /* Remove default margin */
-padding: 0; /* Remove default padding */
-scroll-behavior: smooth;
-}
+/* Main CSS for Deanna Pursley's Portfolio */
 
 body {
-background-color: #f8efde;
-width: 100%;
-min-height: 100vh;
-margin-top: 0;
-overflow: auto;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-imagetext {
-display: grid;
-grid-template-columns: 20% 20% 20% 20% 20%;
-grid-template-rows: 20% 20% 20% 20% 20%;
-flex-direction: row;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-header {
-background-color: #f8efde;
-border-bottom: none;
-width: 100%;
-left: 0;
-top: 0;
-position: relative; /* Ensures proper positioning of the header and its contents */
-
+nav.navbar {
+    background-color: #f9fef5;
+    padding: 1rem;
 }
 
-nav {
-position: relative;
-display: flex;
-width: 100%;
-background-color: #f8efde; /* or use rgba(255, 255, 255, 0) for a transparent background */
-border-bottom: none; /* Remove the bottom border if you don't want it to overlap the image */
-height: 67px;
-margin-bottom: 5px;
-justify-content: flex-end; /* Aligns items to the right */
-left: 4rem;
-}
-
-.navbar {
-position: flex; /* Keeps it on top of the hero image */
-top: 0;
-left: 0;
-width: 100%;
-z-index: 100;
-background-color: #f8efde;
-}
-* Adjust the image position */ .hero-image {
-background-image: url('images/girlwebsitefinal.png');
-align-items: right;
-width: 100%;
-margin-top: -60px; /* Adjust the value as needed to move the image up */
-margin-left: 100px;
-color: #f8efde;
-}
-
-.box {
-background-color: #f8efde;
-border: 8px solid #d05145;
-padding: 10px;
-margin: 20px;
-}
-
-
-nav ul {
-list-style: none;
-color: #d43d2c;
-padding: 0;
-display: flex;
-justify-content: space-between;
-flex-wrap: nowrap;
-margin-right: 1rem;
-}
-
-.nav-item {
-color: #414;
-font-family: "Abril Fatface";
-}
-
-.nav-link {
-font-family: "Abril Fatface";
-color: #f8efde;
-font-size: 25px;
-display: inline-block;
-padding: 0.75em 1.5em;
-line-height: 1.5;
-white-space: nowrap;
-}
-
-.nav-link:visited {
-color: #4c9887;
-}
-
-.nav-link:hover {
-color: #4c9887;
-}
-
-.nav-link:active {
-color: #000;
-}
-
-
-logo {
-max-width: 60px;
-height: auto;
+.navbar-brand img {
+    max-width: 60px;
+    height: auto;
 }
 
 .nav-logo {
-color: #d43d2c;
-text-align: center;
-font-family: "Abril Fatface";
-font-size: 30px;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.5rem;
+    margin-left: 1rem;
 }
 
-
-.container {
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 40px;
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath stroke="%23333" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E');
 }
 
-#about {
-margin-left: 20px;
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    color: #414;
+    font-size: 1rem;
 }
 
-.indent {
-margin: -150, 20, 20, 20;
-}
-
-paragraphs2 {
-margin: 10px;
-color: #d05145 var(--font-family-secondary);
-font-weight: 400;
-text-align: left;
-}
-
-.paragraphs {
-margin: 40px;
-
-}
-
-@media screen and(max-width: 500px) {
-.column {
-    width: 100%;
-}
-}
-
-
-img {
-display: block;
-max-width: 100%;
-height: auto;
-}
-
-hero-image2 {
-margin: 75px;
-padding: 0;
-display: grid;
-place-items: center start; /* Center horizontally and align to the top */
-height: 100vh; /* Full viewport height */
-background-color: #f8efde; /* Background color (optional) */
-}
-
-input,
-button,
-textarea,
-select {
-font: inherit;
-}
-
-strong {
-font-weight: 600;
-}
-
-
-@media all and(min-width: 1300px) {
-body {
-    padding-top: 1rem;
-}
-}
-
-
-.features li > span {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
-width: 100%;
-padding: 1em;
-border: 4px solid;
-box-shadow: inset -4px -4px 0 orangered;
-}
-
-.features li > span:hover {
-background-color: var(--color-primary);
-box-shadow: inset -4px -4px 0 orangered;
-color: orangered;
-border-color: var(--color-secondary);
-}
-
-.carousel-inner img {
-width: 100%; /* Maintains the image width to the container's width */
-max-height: 500px;
-object-fit: cover; /* Ensures image covers specified height */
-}
-
-/* Adjust the height on smaller screens */
-@media(max-width: 576px) {
-.carousel-inner img {
-    max-height: 300px;
-}
-}
-
-/* Additional styling for carousel caption text on smaller screens */
-@media(max-width: 576px) {
-.carousel-caption h4 {
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.carousel-caption h1 {
-    font-size: 30px;
-    font-weight: 600;
-}
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-width: 10%;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-width: 3rem;
-height: 3rem;
-}
-
-.carousel-caption {
-background-color: rgba(0, 0, 0, 0.7); /* Adjust the alpha value (0.5) to control the opacity */
-padding: 20px;
-}
-
-
-@media(min-width: 991.98px) {
-.banner {
+.hero {
     position: relative;
-    margin-top: -90px;
-    z-index: 1;
-}
 }
 
-.bg-vegetable,
-.bg-fruit {
-background: linear-gradient(rgba(156, 168, 176, 0.2), rgba(190, 191, 163, 0.2));
-background-size: cover;
-border-style: solid;
-border-width: 3px;
-border-color: #9ca8b0;
-padding: 5px;
-margin: 10px; /* Add margin to create space between the images */
+.hero-image {
+    position: relative;
+    overflow: hidden;
 }
 
-.bg-vegetable {
-background-image: url('../images/vegassign1.png');
-background-position: center; /* Center the background image */
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.bg-fruit {
-background-image: url('../imgs/appleorchard.jpg');
-background-position: center; /* Center the background image */
+.welcome-text {
+    padding: 2rem;
+    text-align: center;
+}
+
+.welcome-text h2 {
+    font-family: 'Abril Fatface', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.paragraphs, .paragraphs2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #414;
+}
+
+.paragraphs2 {
+    margin-top: 0.5rem;
+}
+
+.divider2 {
+    display: relative;
+    margin: 4rem, auto;
+}
+
+.imagetext {
+    display: block;
+    margin: 0 auto 1rem;
 }
 
 service-item {
-box-shadow: 0 0 45px #EDEDED;
-transition: 0.5s;
+    box-shadow: 0 0 45px #EDEDED;
+    transition: 0.5s;
 }
 
 .about i,
 .service-item i {
-background-image: linear-gradient(var(--primary), var(--secondary));
-background-clip: text;
--webkit-text-fill-color: transparent;
-transition: 0.5s;
+    background-image: linear-gradient(var(--primary), var(--secondary));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s;
 }
 
 .service-item:hover {
-color: var(--light);
-background: var(--primary);
+    color: var(--light);
+    background: var(--primary);
 }
 
 .service-item:hover i {
-background-image: linear-gradient(var(--light), var(--secondary));
+    background-image: linear-gradient(var(--light), var(--secondary));
 }
 
 .service-item:hover h4 {
-transition: 0.5s;
+    transition: 0.5s;
 }
 
 .service-item:hover h4 {
-color: var(--light);
+    color: var(--light);
 }
 
-* Contact form section */ * {
-box-sizing: border-box;
+
+.list-line {
+    padding-left: 1.5rem;
 }
 
-.container {
-max-width: 1170px;
-margin-left: 50px;
-margin-right: auto;
-padding: 1em;
-color: #4c9887;
+.list-line li {
+    margin-bottom: 0.5rem;
 }
+
+@media (min-width: 991.98px) {
+    .banner {
+        position: relative;
+        margin-top: -90px;
+        z-index: 1;
+    }
+}
+
+.footer {
+    background-color: #d05145;
+    color: #f9fef5;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer h5 {
+    font-family: 'Lobster', cursive;
+    margin-bottom: 1rem;
+}
+
+.footer p {
+    margin-bottom: 0.5rem;
+}
+
+.footer a {
+    color: #f9fef5;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.footer i {
+    margin-right: 0.5rem;
+}
+
+.footer a:hover {
+    color: #f9fef5;
+}
+
+@media (max-width: 768px) {
+    .nav-logo {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
 
 ul {
-list-style: none;
-padding: 0;
-color: #414;
+    list-style: none;
+    padding: 0;
+    color: #414;
 }
 
 .brand {
-text-align: center;
-font-weight: 300;
-text-transform: uppercase;
-letter-spacing: 0.1em;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 .brand span {
-color: #f8efde;
+    color: #f8efde;
 }
 
 .wrapper {
-box-shadow: 0 0 20px 0 #9ca8b0 margin 30 0 0 0;
+    box-shadow: 0 0 20px 0 #9ca8b0;
+    margin: 30px 0 0 0;
 }
 
 .wrapper > * {
-padding: 1em;
+    padding: 1em;
 }
 
 .company-info {
-background: #eae8e7;
-border-top-left-radius: 4px;
-border-top-right-radius: 4px;
-text-align: center;
+    background: #eae8e7;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    text-align: center;
 }
 
 .company-info h3,
 .company-info ul {
-text-align: center;
-margin: 0 0 1rem;
+    text-align: center;
+    margin: 0 0 1rem;
 }
 
 .contact {
-background: rgba(156, 168, 176, 0.5);
-border-bottom-left-radius: 4px;
-border-bottom-right-radius: 4px;
-color: #eae8e7;
-font-family: Josephin Slab;
+    background: rgba(156, 168, 176, 0.5);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #f8efde;
+    font-family: Josefin Slab;
 }
 
 .contact form {
@@ -418,7 +254,7 @@ color: #ededed;
 
 .contact form button:hover,
 .contact form button:focus {
-background: #9ca8b0;
+background: #4c9887;
 color: #f8efde;
 outline: 3px;
 transition: background-color 3s ease-out;
@@ -438,15 +274,6 @@ font-size: 16px;
 font-weight: bold;
 }
 
-@media only screen and(min-width: 700px) {
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-
-.wrapper > * {
-    padding: 3em;
-}
 
 .company-info {
     border-radius: 4px 0 0 4px;
@@ -460,393 +287,5 @@ font-weight: bold;
 .company-info ul,
 .brand {
     text-align: left;
-};
-/* End main contact form */
-}
-.h1style {
-text-align: center;
-padding-top: 50px;
-color: #d5461e;
-margin-bottom: 1.5rem;
-}
-.h1center {
-text-align: center;
 }
 
-.h1left {
-text-align: left;
-color: #414;
-}
-
-h2styles {
-color: #414;
-font-size: 24px;
-font-family: Josefin Slab;
-font-weight: bold;
-align-items: center;
-}
-
-.footsies {
-position: relative;
-text-align: center;
-margin-left: 75px;
-margin-right: auto;
-color: #d05145;
-font-weight: bold;
-}
-
-.h2values {
-font-size: 30px;
-color: #414;
-font-family: "Josephin Slab";
-font-weight: bold;
-line-height: 60px;
-}
-
-.aboutparagraph {
-font-size: 24px;
-font-family: 'Raleway';
-line-height: 30px;
-}
-
-.paragraphs {
-color: #414;
-font-family: "Raleway";
-font-size: 16px;
-}
-
-.fontheadings {
-color: #4f4649;
-font-weight: bold;
-font-family: "Zilla Slab";
-text-align: center;
-padding-bottom: 50px;
-}
-
-.display-5 {
-text-align: center;
-color: #f8efde;
-background-color: teal;
-padding: 10px;
-display: inline-block;
-border-radius: 5px;
-margin-left: auto;
-margin-right: auto;
-}
-
-.display-6 {
-font-size: 1.25rem; /* Adjust the font size as needed */
-}
-
-.custom-bg-color {
-background-color: #f8efde; /* Replace #ffcc00 with your desired color code */
-}
-
-full {
-color: #eae8e7;
-font-family: Josephin Slab;
-}
-
-h3 {
-color: #eae8e7;
-font-weight: bold;
-font-family: Josefin Slab;
-font-size: medium;
-}
-
-.h4 {
-text-align: center;
-color: #d05145;
-font-family: Josefin Slab;
-font-size: var(--font-size-h5);
-}
-
-.h4headings {
-color: #000000;
-font-size: 300;
-font-family: "Josefin Slab";
-}
-
-.h5style {
-color: #d05145;
-font-size: 300;
-font-family: "Lobster";
-}
-
-.footer {
-background-color: #f8efde;
-font-family: "Josefin Slab", bold;
-color: #4c9887;
-padding: 20px 0;
-}
-
-.footer .container {
-margin: auto;
-}
-
-.bi {
-color: #d43d2c;
-font-size: 25px;
-margin-right: 10px;
-margin-left: 10px;
-}
-
-.img-fluid {
-width: auto;
-height: auto;
-}
-
-html {
-scroll-behavior: smooth;
-}
-
-a {
-background-color: transparent;
-text-decoration: none;
-border-radius: 0.25rem;
-text-align: center;
-display: inline-block;
-transition: all 0.3s;
-}
-
-.custom-button {
-background-color: #d0695e;
-color: white;
-border: none;
-padding: 10px 20px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-margin: 10px 2px;
-cursor: pointer;
-border-radius: 5px;
-
-}
-
-.custom-button:hover {
-background-color: orangered; /* Darker red on hover */
-}
-
-.container2 {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr;
-gap: 30px 10px;
-grid-auto-flow: row;
-grid-template-areas: ". . .";
-padding-bottom: 40px;
-}
-.column {
-float: left;
-width: 30%;
-padding: 10px;
-}
-
-.row::after {
-content: "";
-display: table;
-}
-
-/* Contact form section */
-* {
-box-sizing: border-box;
-}
-
-.container imagetext {
-max-width: 1170px;
-margin-left: auto;
-margin-right: auto;
-padding: 1em;
-}
-
-.brand {
-text-align: center;
-font-weight: 300;
-text-transform: uppercase;
-letter-spacing: 0.1em;
-}
-
-.brand span {
-color: #d05145;
-}
-
-.wrapper {
-box-shadow: 0 0 20px 0 #4f4f4f;
-margin-top: 30px;
-}
-
-.wrapper > * {
-padding: 1em;
-}
-
-.company-info {
-background: #eae8e7;
-border-top-left-radius: 4px;
-border-top-right-radius: 4px;
-text-align: center;
-}
-
-.company-info h3,
-.company-info ul {
-text-align: center;
-margin: 0 0 1rem;
-}
-
-.contact {
-background: #4c9887;
-border-bottom-left-radius: 4px;
-border-bottom-right-radius: 4px;
-}
-
-.contact form {
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-gap: 20px;
-}
-
-.contact form label {
-display: block;
-}
-
-.contact form p {
-margin: 0;
-}
-
-.contact form {
-grid-column: 1 / 3;
-}
-
-.contact form button,
-.contact form input,
-.contact form textarea {
-width: 100%;
-padding: 1em;
-border: solid 1px #eae8e7;
-border-radius: 4px;
-}
-
-.contact form button:hover,
-.contact form button:focus {
-background: #f8efde;
-color: #d05145;
-outline: 3px;
-transition: background-color 3s ease-out;
-}
-
-
-.contact form textarea {
-resize: none;
-}
-
-.contact form button {
-background: #d0695e;
-border: 0;
-color: #eae8e7;
-text-transform: uppercase;
-font-size: 16px;
-font-weight: bold;
-}
-
-@media only screen and(min-width: 700px) {
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-
-.wrapper > * {
-    padding: 3em;
-}
-
-.company-info {
-    border-radius: 4px 0 0 4px;
-}
-
-.contact {
-    border-radius: 0 4px 4px 0;
-}
-
-.company-info h3,
-.company-info ul,
-.brand {
-    text-align: left;
-};
-/* End main contact form */
-* {
-
-
-  body {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: sans-serif;
-  }
-  h1 {
-    color: coral;
-  }
-  .grid-container {
-    columns: 5 200px;
-    column-gap: 1.5rem;
-    width: 90%;
-    margin: 0 auto;
-    div {
-      width: 150px;
-      margin: 0 1.5rem 1.5rem 0;
-      display: inline-block;
-      width: 100%;
-      border: solid 2px black;
-      padding: 5px;
-      box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-      border-radius: 5px;
-      transition: all .25s ease-in-out;
-      &:hover img {
-        filter: grayscale(0);
-      }
-      &:hover {
-        border-color: coral;
-      }
-      img {
-        width: 100%;
-        filter: grayscale(100%);
-        border-radius: 5px;
-        transition: all .25s ease-in-out;
-      }
-      p {
-        margin: 5px 0;
-        padding: 0;
-        text-align: center;
-        font-style: italic;
-      }
-    }
-  }
-  
-  
-  
-  
-  
-  
-.page-footer ul a {
-display: flex;
-align-items: center;
-padding: 0.75em 1em;@keyframes tonext {
-   75% {
-     left: 0;
-   }
-   95% {
-     left: 100%;
-   }
-   98% {
-     left: 100%;
-   }
-   99% {
-     left: 0;
-   }
- }
-.page-footer ul a:hover {
-background-color: var(--color-primary);
-box-shadow: inset -4px -4px 0 var(--color-primary);
-color: var(--color-secondary);
-border-color: var(--color-primary);
-}
-}

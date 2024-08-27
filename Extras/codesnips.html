@@ -1,0 +1,71 @@
+css: 3 rows 3 column
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 8px;
+    }
+    <div class="parent">
+
+    </div> 
+
+    new:
+    <section class="layout">
+        <div class="header">1</div>
+        <div class="main">2</div>
+        <div class="footer">3</div>
+      </section>
+
+      .layout {
+        width: 1366px;
+        height: 768px;
+      
+        display: grid;
+        grid:
+          "header main" auto
+          "footer footer" 5fr
+          ". ." auto
+          ". ." auto
+          / 1fr 1fr;
+        gap: 8px;
+      }
+      
+      .header { grid-area: header; }
+      .main { grid-area: main; }
+      .footer { grid-area: footer; }
+    ______
+    <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+      <div class="container py-5">
+          <div class="row justify-content-start">
+              <div class="col-lg-8 text-center text-lg-start">
+                  <h1 class="font-secondary text-primary mb-4">Super Crispy</h1>
+                  <h1 class="display-1 text-uppercase text-white mb-4">CakeZone</h1>
+                  <h1 class="text-uppercase text-white">The Best Cake In London</h1>
+                  <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                      <a href="" class="btn btn-primary border-inner py-3 px-5 me-5">Read More</a>
+                      <button type="button" class="btn-play" data-bs-toggle="modal"
+                          data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                          <span></span>
+                      </button>
+                      <h5 class="font-weight-normal text-white m-0 ms-4 d-none d-sm-block">Play Video</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Hero End -->
+
+  .btn {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+}
+
+.hero-header {
+  background: url(../img/hero.jpg) top right no-repeat;
+  background-size: cover;
