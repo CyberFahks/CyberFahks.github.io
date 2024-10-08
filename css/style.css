@@ -3,7 +3,7 @@
 :root {
     --color-primary: #485459;
     --color-primary-alt: #f9f0e1;
-    --color-secondary: #f7f2e5
+    --color-secondary: #f7f2e5;
     --font-family-primary: "Raleway", sans serif;
     --font-optical-sizing: auto;
     --font-family-secondary: "Lobster", serif;
@@ -24,7 +24,7 @@
  }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Josefin Slab', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -77,6 +77,10 @@ nav.navbar {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.hero-image2 {
+  background: #f7f2e5;
 }
 
 .welcome-text {
