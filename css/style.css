@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Abril+Fatface&family=Lobster&display=swap");
 
 :root {
-    --color-primary: #485459;
+    --color-primary: #f9f0f1 ;
     --color-primary-alt: #f9f0e1;
     --color-secondary: #f7f2e5;
     --font-family-primary: "Raleway", sans serif;
     --font-optical-sizing: auto;
-    --font-family-secondary: "Lobster", serif;
+    --font-family-secondary: "Josefin Slab", serif;
     --font-size-h1: 3.5rem;
     --font-size-h2: 1.75rem;
     --font-size-h3: 1.25rem;
@@ -25,9 +25,11 @@
 
 body {
     font-family: 'Josefin Slab', sans-serif;
+    text-decoration: #441144;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background: url("images/girlwebsitebg.png");
 }
 html {
     overflow-x: hidden;
@@ -38,9 +40,12 @@ a {
     text-decoration: none;
 }
 
-nav.navbar {
-    background-color: #f9f0e1;
+.nav.navbar {
     padding: 1rem;
+}
+
+.nav.bg-custom {
+  background: url("images/girlwebsitebg.png");
 }
 
 .navbar-brand img {
@@ -92,6 +97,13 @@ nav.navbar {
     font-family: 'Abril Fatface', serif;
     font-size: 2rem;
     margin-bottom: 1rem;
+}
+
+.centeredtext {
+  text-align: center;
+  font-family: 'Abril Fatface', serif;
+  color:#d05145;
+
 }
 
 .portfoliohead {
@@ -781,15 +793,15 @@ font-weight: bold;
   }
   /* Cat */
   .loader {
-    width: fit-content;
-    height: fit-content;
+    width: auto;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
-  .wrapper {
-    width: fit-content;
+  .wrapper2 {
+    width: auto;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -798,8 +810,8 @@ font-weight: bold;
   }
   .catContainer {
     width: 100%;
-    height: fit-content;
-    display: flex;
+    height: auto;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     position: relative;
