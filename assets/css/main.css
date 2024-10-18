@@ -23,7 +23,7 @@
   --default-color: darkslategrey; /* Default color used for the majority of the text content across the entire website */
   --heading-color: darkslategrey; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #13141fdf; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: rgba(230, 253, 247, 0.76); /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --surface-color: #e6fdf7c2; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
@@ -40,7 +40,7 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f2f6f9;
+  --background-color: whitesmoke;
   --surface-color: #ffffff;
 }
 
@@ -514,7 +514,7 @@ a {
 }
 
 .contact form button {
-	background: darkcyan;;
+	background: darkslategray;
 	border: 0;
 	color: #eae8e7;
 	text-transform: uppercase;
@@ -552,7 +552,7 @@ a {
 ------------------------------*/
 .php-email-form .error-message {
   display: none;
-  background: darkcyan;
+  background: darkslategray;
   color: #ffffff;
   text-align: left;
   padding: 15px;
@@ -563,7 +563,7 @@ a {
 .php-email-form .sent-message {
   display: none;
   color: #ffffff;
-  background: darkcyan;
+  background: darkslategray;
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
@@ -1145,7 +1145,7 @@ section,
 .hero h2 {
   margin: 10px;
   font-size: 36px;
-  color:darkcyan;
+  color:darkslategray;
   font-weight: 700;
   line-height: 56px;
 }
@@ -1214,20 +1214,178 @@ section,
   color: var(--accent-color);
   line-height: 0;
 }
+
+/* loading words animation */
+.card {
+  /* color used to softly clip top and bottom of the .words container */
+  --bg-color: #e6fdf7c2;
+  background-color: var(--bg-color);
+  padding: 1rem 2rem;
+  border-radius: 1.25rem;
+}
+.loader2 {
+  color: #c3d06d;
+  font-family: "Josefin Slab", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 40px;
+  padding: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 8px;
+}
+
+.words {
+  overflow: hidden;
+  position: relative;
+}
+.words::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    var(--bg-color) 10%,
+    transparent 60%,
+    transparent 70%,
+    var(--bg-color) 90%
+  );
+  z-index: 20;
+}
+
+.word {
+  display: block;
+  height: 100%;
+  padding-left: 6px;
+  color: darkslategray;
+  animation: spin_4991 4s infinite;
+}
+
+@keyframes spin_4991 {
+  10% {
+    -webkit-transform: translateY(-102%);
+    transform: translateY(-102%);
+  }
+
+  25% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  35% {
+    -webkit-transform: translateY(-202%);
+    transform: translateY(-202%);
+  }
+
+  50% {
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%);
+  }
+
+  60% {
+    -webkit-transform: translateY(-302%);
+    transform: translateY(-302%);
+  }
+
+  75% {
+    -webkit-transform: translateY(-300%);
+    transform: translateY(-300%);
+  }
+
+  85% {
+    -webkit-transform: translateY(-402%);
+    transform: translateY(-402%);
+  }
+
+  100% {
+    -webkit-transform: translateY(-400%);
+    transform: translateY(-400%);
+  }
+}
+
+/* Begin dot animation */
+
+.loader {
+  width: 64px;
+  height: 64px;
+  position: relative;
+  background: aliceblue;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  transform: rotate(45deg) translate(30%, 40%);
+  background: #c3d06d;
+  box-shadow: 32px -34px 0 5px #0a405f;
+  animation: slide 2s infinite ease-in-out alternate;
+}
+
+.loader:after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #c3d06d;
+  transform: rotate(0deg);
+  transform-origin: 35px 145px;
+  animation: rotate 2s infinite ease-in-out;
+}
+
+@keyframes slide {
+  0% , 100% {
+    bottom: -35px
+  }
+
+  25% , 75% {
+    bottom: -2px
+  }
+
+  20% , 80% {
+    bottom: 2px
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-15deg)
+  }
+
+  25% , 75% {
+    transform: rotate(0deg)
+  }
+
+  100% {
+    transform: rotate(25deg)
+  }
+}
+  
+/*end dot animation*/
 /* TV section */
 
 /* From Uiverse.io by Praashoo7 */
 /* Design Inspired by one of Stefan Devai's Design on Dribble */
 
 .main_wrapper {
-  display: flex; /* Use flexbox for better flexibility */
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
-  width: 30em;
-  height: 30em;
-  width: 30em;
-  height: 30em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }
+
 
 .main {
   display: flex;
@@ -1241,7 +1399,7 @@ section,
   height: 5em;
   border-radius: 50%;
   border: 2px solid black;
-  background-color: darkcyan;
+  background-color: darkslategray;
   margin-bottom: -6em;
   margin-left: 10em;
   z-index: -1;
@@ -1844,7 +2002,7 @@ section,
   top: 0;
   width: 100%;
   height: 100%;
-  background: darkcyan;
+  background: darkslategray;
 }
 
 .banter-loader__box:nth-child(3n) {
@@ -2325,7 +2483,7 @@ section,
 }
 
 .portfolio .portfolio-filters li {
-  background-color: var(--surface-color);
+  background-color: darkslategray;
   cursor: pointer;
   display: inline-block;
   padding: 8px 20px 10px 20px;
@@ -2341,7 +2499,7 @@ section,
 .portfolio .portfolio-filters li:hover,
 .portfolio .portfolio-filters li.filter-active {
   color: var(--contrast-color);
-  background-color: var(--accent-color);
+  background-color: whitesmoke;
 }
 
 .portfolio .portfolio-filters li:first-child {
@@ -2415,7 +2573,79 @@ section,
   bottom: 0;
 }
 
+/*Download button */
+.download-button {
+  position: relative;
+  border-width: 0;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 1;
+}
 
+.download-button .docs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 40px;
+  padding: 0 10px;
+  border-radius: 4px;
+  z-index: 1;
+  background-color: #242a35;
+  border: solid 1px #e8e8e82d;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button:hover {
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.download {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  z-index: -1;
+  border-radius: 4px;
+  transform: translateY(0%);
+  background-color: #c3d06d;
+  border: solid 1px #01e0572d;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button:hover .download {
+  transform: translateY(100%);
+}
+
+.download svg polyline,
+.download svg line {
+  animation: docs 1s infinite;
+}
+
+@keyframes docs {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(-15%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
 
 /*--------------------------------------------------------------
 # Contact Section
@@ -2521,7 +2751,7 @@ section,
 }
 
 .portfolio-details .portfolio-info {
-  background-color: var(--surface-color);
+  background-color: darkslategray;
   padding: 30px;
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
 }
@@ -2563,7 +2793,7 @@ section,
 # Service Details Section
 --------------------------------------------------------------*/
 .service-details .services-list {
-  background-color: var(--surface-color);
+  background-color: whitesmoke;
   padding: 10px 30px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   margin-bottom: 20px;
