@@ -12,29 +12,29 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Poppins",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Raleway",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Englebert",  sans-serif;
+  --nav-font: "Raleway",  sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: whitesmoke; /* Background color for the entire website, including individual sections */
-  --default-color: darkslategrey; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: darkslategrey; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #13141fdf; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #e6fdf7c2; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --default-color: #0a405f; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #0a405f; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #49403f ; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #c3d06d; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #5a656e;  /* The default color of the main navmenu links */
-  --nav-hover-color: #749c90; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-color: #0a405f;  /* The default color of the main navmenu links */
+  --nav-hover-color: #c3d06d; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: darkslategrey; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #65b3bf; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-color:#0a405f; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #c3d06d; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -45,7 +45,7 @@
 }
 
 .dark-background {
-  --background-color: #060606;
+  --background-color: 0a405f;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #252525;
@@ -96,13 +96,13 @@ h6 {
 }
 
 .nav-link:link {
-	font-family: "Zilla Slab", italic;
-	color: #731c12;
+	font-family: "Englebert", italic;
+	color: #c3d06d;
 	font-size: 30px;
 }
 
 .nav-link:visited {
-	color: #731c12;
+	color: #0a405f;
 }
 
 .logo {
@@ -112,7 +112,7 @@ h6 {
 }
 
 .nav-link:hover {
-	color: #9ca8b0;
+	color: #49403f;
 }
 
 .nav-link:active {
@@ -129,9 +129,9 @@ body {
 	margin-left: 1in;
 	margin-right: 1in;
 	background: #ffffff;
-	color: #731c12;
+	color: #0a405f;
 	line-height:16px;
-	font-family: "Zilla Slab", sans-serif;
+	font-family: "Raleway", sans-serif;
 	padding: 1em;
 }
 
@@ -221,7 +221,7 @@ body {
 }
 
 .service-item {
-    box-shadow: 0 0 45px #EDEDED;
+    box-shadow: 0 0 45px lightslategray;
     transition: .5s;
 }
 
@@ -251,7 +251,7 @@ body {
 }
 
 .vertical-rule {
-	border-left: 2px solid #731c12;
+	border-left: 2px solid #0a405f;
 	height: 100%;
 	margin: 0 20px;
 }
@@ -274,38 +274,38 @@ body {
 
 .h1left {
 	text-align: left;
-	color: #731c12;
+	color: #0a405f;
 }
 
 .h2style {
-	color:#731c12;
+	color:#0a405f;
 	font-size: 24px;
 }
 
 .h2values {
 	font-size: 30px;
-	color: #731c12;
-	font-family: "Red Hat Display";
+	color: #0a405f;
+	font-family: "Lilita One";
 	font-weight: bold;
 	line-height: 60px;
 }
 
 .aboutparagraph {
 	font-size: 24px;
-	font-family: 'Zilla Slab';
+	font-family: 'Englebert';
 	line-height: 30px;
 }
 
 .paragraphs {
-	color: #731c12;
-	font-family: "Red Hat Display";
+	color: #0a405f;
+	font-family: "Raleway";
 	font-size: 16px;
 }
 
 .fontheadings {
-	color: #731c12;
+	color: #0a405f;
 	font-weight: bold;
-	font-family: "Zilla Slab";
+	font-family: "Englebert";
 	text-align: center;
 	padding-bottom: 50px;
 }
@@ -313,7 +313,7 @@ body {
 .display-5 {
 	text-align: center;
 	color: #ffffff;
-	background-color: #731c12;
+	background-color: #0a405f;
 	padding: 10px;                        
 	display: inline-block;                
 	border-radius: 5px;  
@@ -326,11 +326,11 @@ body {
 }
 
 .custom-bg-color {
-    background-color: #731c12; /* Replace #ffcc00 with your desired color code */
+    background-color: #ffffff; /* Replace #ffcc00 with your desired color code */
 }
 
 .h3 {
-	color: #731c12;
+	color: #c3d06d;
 	font-weight: bold;
 }
 
@@ -346,15 +346,15 @@ body {
 }
 
 .h5style {
-	color: #731c12;
+	color: #0a405f;
 	font-size: 300;
 	font-family: "Red Hat Display";
 }
 
 .footer {
-	background-color: rgba(156, 168, 176, .5);
-	font-family: "Zilla Slab", bold;
-	color: #731c12;
+	background-color: steelblue;
+	font-family: "Lilita One", bold;
+	color: #c3d06d;
 	padding: 20px 0;
 }
 
@@ -363,7 +363,7 @@ body {
 }
 
 .bi {
-	color: #731c12;
+	color: azure;
 	font-size: 25px;
 	margin-right: 10px;
 	margin-left: 10px;
@@ -388,8 +388,8 @@ a {
 }
 
 .custom-button {
-    background-color: #731c12;  
-    color: white;           
+    background-color: #0a405f;  
+    color: #ffffff;           
     border: none;          
     padding: 10px 20px;     
     text-align: center;     
@@ -403,7 +403,7 @@ a {
 }
 
 .custom-button:hover {
-    background-color: darkred; /* Darker red on hover */
+    background-color: #c3d06d; /* Darker red on hover */
 }
 
 .container2 {  display: grid;
@@ -423,7 +423,7 @@ a {
   }
 
   .container {
-	max-width: 1700px;
+	max-width: 1200px;
 	align-items: center;
 	padding: 1em;
   }
@@ -431,7 +431,7 @@ a {
   ul {
 	list-style: none;
 	padding: 0;
-	color: #414;
+	color: #0a405f;
   }
   
   .brand {
@@ -442,7 +442,7 @@ a {
   }
 
 .brand span {
-	color: #731c12;
+	color: #0a405f;
 }
 
 .wrapper {
@@ -1967,11 +1967,11 @@ section,
 .services .service-item:hover h4 a,
 .services .service-item:hover .icon i,
 .services .service-item:hover p {
-  color: var(--contrast-color);
+  color: #c3d06d;
 }
 
 .services .service-item:hover:before {
-  background: var(--accent-color);
+  background: whitesmoke;
   inset: 0;
   border-radius: 0px;
 }
@@ -2002,7 +2002,7 @@ section,
   top: 0;
   width: 100%;
   height: 100%;
-  background: darkslategray;
+  background: darkgray;
 }
 
 .banter-loader__box:nth-child(3n) {
