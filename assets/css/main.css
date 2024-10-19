@@ -635,10 +635,7 @@ a {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Navmenu - Desktop */
-@media (min-width: 1200px) {
-  .navmenu {
-    padding: 0;
-  }
+
 
   .navmenu ul {
     margin: 0;
@@ -739,7 +736,7 @@ a {
     left: -100%;
     visibility: visible;
   }
-}
+
 
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
@@ -1055,13 +1052,6 @@ section,
   overflow: clip;
 }
 
-@media (max-width: 1199px) {
-
-  section,
-  .section {
-    scroll-margin-top: 66px;
-  }
-}
 
 /*--------------------------------------------------------------
 # Global Section Titles
@@ -1414,8 +1404,8 @@ section,
   transform: rotate(140deg);
   border: 4px solid transparent;
   box-shadow:
-    inset 0p16px darkgray;
-    inset 0 16px 1px 1px black;
+    inset 0 16px darkgray;
+    inset: 0 16px 1px 1px black;
    -moz-box-shadow:
     inset 0 16px #0a405f
     inset 0 16px 1px 1px darkgray;
@@ -1655,6 +1645,7 @@ section,
   row-gap: 0.75em;
   box-shadow: 3px 3px 0 #c3d06d;
 }
+
 .b1 {
   width: 1.65em;
   height: 1.65em;
@@ -1663,9 +1654,10 @@ section,
   border: 2px solid black;
   box-shadow:
     inset 2px 2px 1px #0a405f,
-    -2px 0 #,
+    -2px 0 #0a405f,
     -2px 0 0 1px black;
 }
+
 .b1::before {
   content: "";
   position: absolute;
@@ -1797,7 +1789,7 @@ section,
   align-items: center;
   justify-content: center;
   opacity: 0.5;
-  font-family: "Abril Fatface";
+  font-family: "Englebert";
   color: #0a405f;
 }
 .text_4041 {
@@ -2594,7 +2586,7 @@ section,
   padding: 0 10px;
   border-radius: 4px;
   z-index: 1;
-  background-color: #242a35;
+  background-color: #0a405f;
   border: solid 1px #e8e8e82d;
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
@@ -2620,7 +2612,7 @@ section,
   border-radius: 4px;
   transform: translateY(0%);
   background-color: #c3d06d;
-  border: solid 1px #01e0572d;
+  border: solid 1px #0a405f;
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
@@ -2811,7 +2803,8 @@ section,
 
 .service-details .services-list a.active {
   color: var(--heading-color);
-  font-weight: 700;
+  font-family: "Raleway";
+  font-size: 20px;
   border-color: var(--accent-color);
 }
 
@@ -2858,6 +2851,3 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
