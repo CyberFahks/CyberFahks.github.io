@@ -12,9 +12,19 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Raleway",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Englebert",  sans-serif;
-  --nav-font: "Raleway",  sans-serif;
+  --default-font: "Montserrat Alternates",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Moderustic",  sans-serif;
+  --nav-font: "Josefin Slab",  sans-serif;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
+.moderustic-h1 {
+  font-family: "Moderustic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: "400";
+  font-style: normal;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -370,7 +380,7 @@ body {
 }
 
 .img-fluid {
-	width: auto;
+	width: 300 px;
 	height: auto;
 }
 
@@ -1089,7 +1099,7 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  background: url(../img/spiralheader.jpg) top center no-repeat;
+  background: url(../img/herovid.mp4) top center no-repeat;
   background-size: contain;
   width: 100%;
   min-height: 90vh;
@@ -1785,7 +1795,7 @@ section,
   flex-direction: row;
   column-gap: 6em;
   z-index: -5;
-  margin-bottom: 2em;
+  margin-bottom: 5em;
   align-items: center;
   justify-content: center;
   opacity: 0.5;
@@ -2637,6 +2647,62 @@ section,
   100% {
     transform: translateY(0%);
   }
+}
+/* Card from UIverse */
+.card {
+  width: 200px;
+  height: min-content;
+  transition: all .3s;
+  position: relative;
+  border-radius: .5rem 2rem;
+  box-shadow: 0px 15px 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.img {
+  transition: all .3s;
+  background: #ff0084;
+  background: -webkit-linear-gradient(to right, #33001b, #ff0084);
+  background: linear-gradient(to right, #33001b, #ff0084);
+  width: 100%;
+}
+
+.img:hover {
+  transform: scale(1.3);
+}
+
+.img-container {
+  display: grid;
+  border-radius: .5rem 2rem;
+  height: 270px;
+  overflow: hidden;
+}
+
+.description {
+  position: absolute;
+  bottom: .5rem;
+  left: .5rem;
+  text-align: start;
+  padding: .5rem 1em;
+  width: 90%;
+  transition: all 0.5s ease;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  backdrop-filter: blur(.1rem);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: .5rem 2rem;
+}
+
+.description:hover {
+  transform: perspective(100px) translateX(7px) rotateX(3deg) rotateY(3deg) scale(1);
+  box-shadow: none;
+}
+
+.title {
+  color: aliceblue;
 }
 
 /*--------------------------------------------------------------
