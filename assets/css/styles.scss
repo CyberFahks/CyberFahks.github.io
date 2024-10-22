@@ -1,0 +1,14 @@
+$--font-family: 'Montserrat', sans-serif;
+$--main-background: #CED8F2;
+$--color-light: #E5E9F8;
+$--color-middle: #83C965;
+$--color-dark: darkgray;
+
+body {
+  font-family: $--font-family;
+  background-color: $--main-background;
+}
+
+.card {
+  background-color: $--color-light;
+}
