@@ -1,3 +1,29 @@
+$mw-s:  320px;
+$mw-m:  768px;
+$mw-l:  1024px;
+$mw-xl: 1382px;
+
+// Mobile
+@media screen and (min-width: $mw-s) {
+
+}
+
+// Tablets
+@media screen and (min-width: $mw-m) {
+
+}
+
+// iPads
+@media screen and (min-width: $mw-l) {
+
+}
+
+// Powerbooks
+@media screen and (min-width: $mw-xl) {
+
+}
+
+
 $--font-family: 'Montserrat', sans-serif;
 $--main-background: #CED8F2;
 $--color-light: #E5E9F8;
