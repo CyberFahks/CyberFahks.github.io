@@ -18,10 +18,10 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #0a405f;  /* The default color of the main navmenu links */
-  --nav-background-color: url('assets/img/navbarback.jpg');
+  
   --nav-hover-color: #24b388a7; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: url ('assets/img/navbarback.jpg'); /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #fffef4; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-mobile-background-color: white; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #0a405f; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #bfd57d; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
@@ -34,7 +34,7 @@
 }
 
 .dark-background {
-  --background-color: khaki;
+  --background-color: white;
   --default-color: #c9dad2;
   --heading-color: #fffef4;
   --surface-color: #bfd57d;
@@ -82,7 +82,9 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
-
+.pencil {
+  padding-bottom: 2rem;
+}
 
 
 @media (min-width: 480px) {
@@ -187,7 +189,7 @@ html {
 }
 
 a {
-	background-color: #fffef4;
+	background-color: #ffffff;
 	text-decoration: none;
 	border-radius: .25rem;
 	text-align: center;
@@ -447,7 +449,7 @@ a {
 @media (min-width: 1200px) {
   .navmenu {
     padding: 0;
-    background-color: #fffef4;
+    background-color: #ffffff;
   }
 
   .navmenu ul {
