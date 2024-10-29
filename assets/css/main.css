@@ -1,8 +1,8 @@
 
 :root {
-  --default-font: "Quicksand",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font: "Inter",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Quicksand",  sans-serif;
+  --nav-font: "Inter",  sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -57,7 +57,7 @@ body {
 	background: white;
 	color: #0a405f;
 	line-height:16px;
-	font-family: "Quicksand", sans-serif;
+	font-family: "Inter", sans-serif;
 	padding: 1em;
 }
 
@@ -117,7 +117,10 @@ h6 {
 	color: #000;
 }
 
-.
+.paragraph {
+  font-size: 1rem;
+  font-family: "Inter", sans serif;
+}
 
 
 
@@ -974,7 +977,7 @@ section,
 
 .hero .btn-scroll {
   transition: 0.4s;
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
+  color: #bdf344, transparent 60%;
   display: block;
   margin-top: 30px;
   animation: btn-up-down 1s ease-in-out infinite alternate-reverse both;
@@ -982,10 +985,11 @@ section,
 
 .hero .btn-scroll i {
   font-size: 48px;
+  color:#0a405f;
 }
 
 .hero .btn-scroll:hover {
-  color: var(--accent-color);
+  color: #0a445f;
 }
 
 @keyframes btn-up-down {
@@ -1069,7 +1073,7 @@ section,
 # Resume Section
 --------------------------------------------------------------*/
 .resume .resume-title {
-  color: slategrey;
+  color: #0a445f;
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
