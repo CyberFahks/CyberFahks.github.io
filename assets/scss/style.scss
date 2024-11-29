@@ -9,7 +9,7 @@ body {
 #main {
 	position: relative;
 	z-index: 20;
-	background: #ebecc2;
+	background: #ededed;
 	transition: transform .6s ease;
 	@media(min-width: $keyBreakpoint){
 		padding: 1em;
@@ -58,7 +58,7 @@ body {
 	right: 0;
 	width: 60%;
 	height: 100%;
-	background: #ebecc2;
+	background: #ededed;
 	overflow-y: scroll;
 	z-index: 10;
 	img {
