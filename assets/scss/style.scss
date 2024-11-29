@@ -1,4 +1,4 @@
-* { box-sizing: boder-box; }
+* { box-sizing: border-box; }
 
 $keyBreakpoint: 640px;
 
@@ -9,7 +9,7 @@ body {
 #main {
 	position: relative;
 	z-index: 20;
-	background: #fff;
+	background: #ebecc2;
 	transition: transform .6s ease;
 	@media(min-width: $keyBreakpoint){
 		padding: 1em;
@@ -17,7 +17,7 @@ body {
 }
 
 .fake-section {
-	background: #eee;
+	background: #ebecc2;
 	height: 300px;
 }
 
@@ -58,7 +58,7 @@ body {
 	right: 0;
 	width: 60%;
 	height: 100%;
-	background: #eee;
+	background: #ebecc2;
 	overflow-y: scroll;
 	z-index: 10;
 	img {

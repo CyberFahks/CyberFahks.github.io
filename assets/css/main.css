@@ -7,38 +7,38 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: white; /* Background color for the entire website, including individual sections */
-  --default-color: #0a405f; /* Default color used for the majority of the text content across the entire website */
+  --background-color: #ebecc2; /* Background color for the entire website, including individual sections */
+  --default-color: #5b8e7c; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #323232; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #0a405f; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: white; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #9bc8bd; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --accent-color: #8bb369; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ebecc2; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #8bb369; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #0a405f;  /* The default color of the main navmenu links */
+  --nav-color: #5b8e7c;  /* The default color of the main navmenu links */
   
-  --nav-hover-color: #24b388a7; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: white; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #0a405f; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #bfd57d; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-hover-color: #8bb369; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ebecc2; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ebecc2; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #5b8e7c; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #8bb369; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #ffffff;
-  --surface-color: khaki;
+  --background-color: #ebecc2;
+  --surface-color: #8bb369;
 }
 
 .dark-background {
-  --background-color: white;
-  --default-color: #c9dad2;
-  --heading-color: #fffef4;
-  --surface-color: #bfd57d;
-  --contrast-color: #0a405f;
+  --background-color: #ebecc2;
+  --default-color: #ebecc2;
+  --heading-color: #ebecc2;
+  --surface-color: #8bb369;
+  --contrast-color: #5b8e7c;
 }
 
 /* Smooth scroll */
@@ -54,8 +54,8 @@
 body {
 	margin-left: 1in;
 	margin-right: 1in;
-	background: white;
-	color: #0a405f;
+	background: #ebecc2;
+	color: #5b8e7c;
 	line-height:16px;
 	font-family: "Inter", sans-serif;
 	padding: 1em;
@@ -63,13 +63,13 @@ body {
 
 
 a {
-  color: #ffffff;
+  color: #ebecc2;
   text-decoration: none;
   transition: 0.3s;
 }
 
 a:hover {
-  color: #0a405f;
+  color: #5b8e7c;
   text-decoration: none;
 }
 
@@ -95,12 +95,12 @@ h6 {
 
 .nav-link:link {
 	font-family: "Lobster", italic;
-	color: #0a405f;
+	color: #5b8e7c;
 	font-size: 30px;
 }
 
 .nav-link:visited {
-	color: #c3d06d;
+	color: #8bb369;
 }
 
 .logo {
@@ -163,20 +163,20 @@ h6 {
 }
 
 .h3 {
-	color: #0a405f;
+	color: #5b8e7c;
 	font-weight: bold;
 }
 
 .h4 {
 	text-align: left;
-	color: #0a405f;
+	color: #5b8e7c;
 }
 
 
 
 
 .bi {
-	color: #fffef4;
+	color: #ebecc2;
 	font-size: 25px;
 	margin-right: 10px;
 	margin-left: 10px;
@@ -192,7 +192,7 @@ html {
 }
 
 a {
-	background-color: #ffffff;
+	background-color: #ebecc2;
 	text-decoration: none;
 	border-radius: .25rem;
 	text-align: center;
@@ -367,7 +367,7 @@ a {
 .php-email-form .error-message {
   display: none;
   background: darkcyan;
-  color: #ffffff;
+  color: #ebecc2;
   text-align: left;
   padding: 15px;
   margin-bottom: 24px;
@@ -376,7 +376,7 @@ a {
 
 .php-email-form .sent-message {
   display: none;
-  color: #ffffff;
+  color: #ebecc2;
   background: darkcyan;
   text-align: center;
   padding: 15px;
@@ -452,7 +452,7 @@ a {
 @media (min-width: 1200px) {
   .navmenu {
     padding: 0;
-    background-color: #ffffff;
+    background-color: #ebecc2;
   }
 
   .navmenu ul {
@@ -763,7 +763,7 @@ a {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #ffffff;
+  border: 6px solid #ebecc2;
   border-color: var(--accent-color) transparent var(--accent-color) transparent;
   border-radius: 50%;
   width: 60px;
@@ -985,7 +985,7 @@ section,
 
 .hero .btn-scroll i {
   font-size: 48px;
-  color:#0a405f;
+  color:#5b8e7c;
 }
 
 .hero .btn-scroll:hover {
@@ -1636,7 +1636,7 @@ section,
     inset 0 16px darkgray;
   inset: 0 16px 1px 1px black;
   -moz-box-shadow:
-    inset 0 16px #0a405f inset 0 16px 1px 1px darkgray;
+    inset 0 16px #5b8e7c inset 0 16px 1px 1px darkgray;
 }
 
 .antenna::after {
@@ -1660,7 +1660,7 @@ section,
   width: 1.5em;
   height: 0.8em;
   border-radius: 50%;
-  background-color: #0a405f;
+  background-color: #5b8e7c;
 }
 
 .a1 {
@@ -1730,7 +1730,7 @@ section,
   height: 9em;
   margin-top: 3em;
   border-radius: 15px;
-  background-color: #0a405f;
+  background-color: #5b8e7c;
   display: flex;
   justify-content: center;
   border: 2px solid #1d0e01;
@@ -1745,7 +1745,7 @@ section,
   border-radius: 15px;
   background:
     repeating-radial-g radient(#c3d06d 0 0.0001%, #00000070 0 0.0002%) 50% 0/2500px 2500px,
-    repeating-conic-gradient(#0a405f 0 0.0001%, #00000070 0 0.0002%) 60% 60%/2500px 2500px;
+    repeating-conic-gradient(#5b8e7c 0 0.0001%, #00000070 0 0.0002%) 60% 60%/2500px 2500px;
   background-blend-mode: difference;
   opacity: 0.09;
 }
@@ -1787,10 +1787,10 @@ section,
   width: 13em;
   height: 7.85em;
   font-family: Montserrat;
-  border: 2px solid #0a405f;
+  border: 2px solid #5b8e7c;
   background:
-    repeating-radial-gradient(#000 0 0.0001%, #ffffff 0 0.0002%) 50% 0/2500px 2500px,
-    repeating-conic-gradient(#000 0 0.0001%, #ffffff 0 0.0002%) 60% 60%/2500px 2500px;
+    repeating-radial-gradient(#000 0 0.0001%, #ebecc2 0 0.0002%) 50% 0/2500px 2500px,
+    repeating-conic-gradient(#000 0 0.0001%, #ebecc2 0 0.0002%) 60% 60%/2500px 2500px;
   background-blend-mode: difference;
   animation: b 0.2s infinite alternate;
   border-radius: 10px;
@@ -1894,11 +1894,11 @@ section,
   width: 1.65em;
   height: 1.65em;
   border-radius: 50%;
-  background-color: #0a405f;
+  background-color: #5b8e7c;
   border: 2px solid black;
   box-shadow:
-    inset 2px 2px 1px #0a405f,
-    -2px 0 #0a405f,
+    inset 2px 2px 1px #5b8e7c,
+    -2px 0 #5b8e7c,
     -2px 0 0 1px black;
 }
 
@@ -1945,7 +1945,7 @@ section,
   border: 2px solid black;
   box-shadow:
     inset 2px 2px 1px #c3d06d,
-    -2px 0 #0a405f,
+    -2px 0 #5b8e7c,
     -2px 0 0 1px black;
 }
 
@@ -1989,9 +1989,9 @@ section,
   width: 0.65em;
   height: 0.65em;
   border-radius: 50%;
-  background-color: #0a405f;
+  background-color: #5b8e7c;
   border: 2px solid black;
-  box-shadow: inset 1.25px 1.25px 1px #0a405f;
+  box-shadow: inset 1.25px 1.25px 1px #5b8e7c;
 }
 
 .speakers .g {
@@ -2012,8 +2012,8 @@ section,
 .base1 {
   height: 1em;
   width: 2em;
-  border: 2px solid #0a405f;
-  background-color: #0a405f;
+  border: 2px solid #5b8e7c;
+  background-color: #5b8e7c;
   margin-top: -0.15em;
   z-index: -1;
 }
@@ -2046,7 +2046,7 @@ section,
   justify-content: center;
   opacity: 0.5;
   font-family: "Englebert";
-  color: #0a405f;
+  color: #5b8e7c;
 }
 
 .text_4041 {
@@ -2105,7 +2105,7 @@ figure img {
   position: relative;
   width: 300px;
   height: 300px;
-  background-color: #fffef4;
+  background-color: #ebecc2;
   box-shadow: .1em 0.2em .1em #1234, 0 0 1em #1234 inset;
 }
 .imageRoll i {
@@ -2116,7 +2116,7 @@ figure img {
   transform-style: preserve-3d;
   transform-origin: left;
   transition: transform 0.6s var(--delay, 0s) ease-in-out;
-  background-color: #fffef4;
+  background-color: #ebecc2;
   background-size: 300px 300px;
 }
 .imageRoll > i {
@@ -2557,8 +2557,8 @@ figure img {
 /* gallery */
 
 .container.gallery-container {
-  background-color: #fffef4;
-  color: #0a405f;
+  background-color: #ebecc2;
+  color: #5b8e7c;
   min-height: 100vh;
   padding: 30px 50px;
 }
@@ -2599,7 +2599,7 @@ figure img {
   margin-top: -13px;
   margin-left: -13px;
   opacity: 0;
-  color: #fffef4;
+  color: #ebecc2;
   font-size: 26px;
   font-family: 'Lobster';
   content: '\e003';
@@ -2616,7 +2616,7 @@ figure img {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background-color: #0a405f;
+  background-color: #5b8e7c;
   content: 'Hello';
   transition: 0.4s;
 }
