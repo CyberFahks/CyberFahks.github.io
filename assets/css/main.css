@@ -7,11 +7,11 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ebecc2; /* Background color for the entire website, including individual sections */
+  --background-color: ivory; /* Background color for the entire website, including individual sections */
   --default-color: #5b8e7c; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #323232; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: white; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #f4a158; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --heading-color: #414141; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #8bb369; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: white; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #414141; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
@@ -146,7 +146,7 @@ h6 {
 }
 
 .service-item:hover {
-    color: var(--light);
+    color: white;
     background: var(--primary) !important;
 }
 
