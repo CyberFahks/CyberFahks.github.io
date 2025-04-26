@@ -1212,8 +1212,8 @@ h5,
 
 .site-section-hero,
 .site-section-hero .row {
-  height: 90vh;
-  min-height: 500px;
+  height: 60vh;
+  min-height: 200px;
   z-index: 2;
   position: relative;
 }
