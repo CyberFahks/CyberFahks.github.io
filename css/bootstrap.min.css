@@ -289,7 +289,7 @@ select {
 button,
 html [type=button] {
      -webkit-appearance: button,
-      -moz-appearance; button
+      -moz-appearance; button:
 }
 
 [type=button]::-moz-focus-inner,
