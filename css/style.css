@@ -1212,10 +1212,24 @@ h5,
 
 .site-section-hero,
 .site-section-hero .row {
-  height: 60vh;
-  min-height: 200px;
-  z-index: 2;
-  position: relative;
+  height: 50vh; /* Default height */
+  min-height: 400px;
+}
+
+@media (max-width: 450px) {
+  .site-section-hero,
+  .site-section-hero .row {
+    height: 50vh; /* Adjusts header for smaller screens */
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-section-hero,
+  .site-section-hero .row {
+    height: 40vh; /* Further reduce for mobile */
+    min-height: 200px;
+  }
 }
 
 .site-section-hero .heading {
